@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang Web Đơn Giản</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="./css/header.css"> -->
+  <style>
+    /* Thiết lập padding tùy chỉnh cho cột 1 */
+    .custom-padding-column1 {
+    }
+
+    /* Thiết lập padding tùy chỉnh cho cột 2 */
+    .custom-padding-column2 {
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- Header -->
-  <!-- <header class="bg-dark text-white p-4">
-    <div class="container">
-      <h1>Trang Web Đơn Giản</h1>
-      <p>Xây dựng bằng Bootstrap</p>
-    </div>
-  </header> -->
-
   <!-- Content -->
-  <section class="container mt-4">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>nội dung</h2>
-        <p>Đây là một trang web đơn giản được xây dựng bằng Bootstrap.</p>
+  <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="breadcrumb__text">
+            <h2>Organi Shop</h2>
+            <div class="breadcrumb__option">
+              <a href="./index.html">Home</a>
+              <span>Shop</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Cột 1 (3/12) -->
+      <div class="col-md-3 custom-col custom-padding-column1">
+        <!-- Hàng 1 -->
+        <div class="row row1 bg-primary">
+          <div class="col-md-12">
+            <p>Hàng 1 - Cột 1</p>
+          </div>
+        </div>
+        <!-- Hàng 2 -->
+        <div class="row bg-secondary">
+          <div class="col-md-12">
+            <p>Hàng 2 - Cột 1</p>
+          </div>
+        </div>
+        <!-- Hàng 3 -->
+        <div class="row bg-success">
+          <div class="col-md-12">
+            <p>Hàng 3 - Cột 1</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Cột 2 (9/12) -->
+      <div class="col-md-9 custom-col custom-padding-column2">
+        <!-- Hàng 1 -->
+        <div class="row bg-info">
+          <div class="col-md-12">
+            <p>Hàng 1 - Cột 2</p>
+          </div>
+        </div>
+        <!-- Hàng 2 -->
+        <div class="row bg-warning">
+          <div class="col-md-12">
+            <p>Hàng 2 - Cột 2</p>
+          </div>
+        </div>
+        <!-- Hàng 3 -->
+        <div class="row bg-danger">
+          <div class="col-md-12">
+            <p>Hàng 3 - Cột 2</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!-- Footer -->
   <footer class="bg-dark text-white text-center p-3 mt-4">
     <div class="container">
@@ -35,4 +93,5 @@
   </footer>
 
 </body>
+
 </html>
