@@ -57,17 +57,18 @@
 	width: 100%;
 }
 
-.product__discount__item:hover .product__discount__item__pic .product__item__pic__hover {
+/* .product__discount__item:hover .product__discount__item__pic .product__item__pic__hover {
 	bottom: 20px;
-}
+} */
 
 .product__discount__item__pic {
 	height: 270px;
-	position: relative;
-	overflow: hidden;
+	background-color: #7fad39;
+	/* position: relative;
+	overflow: hidden; */
 }
 
-.product__discount__item__pic .product__discount__percent {
+/* .product__discount__item__pic .product__discount__percent {
 	height: 45px;
 	width: 45px;
 	background: #dd2222;
@@ -79,9 +80,9 @@
 	position: absolute;
 	left: 15px;
 	top: 15px;
-}
+} */
 
-.product__item__pic__hover {
+/* .product__item__pic__hover {
 	position: absolute;
 	left: 0;
 	bottom: -50px;
@@ -92,14 +93,14 @@
 	-ms-transition: all, 0.5s;
 	-o-transition: all, 0.5s;
 	transition: all, 0.5s;
-}
+} */
 
-.product__item__pic__hover li {
+/* .product__item__pic__hover li {
 	list-style: none;
 	display: inline-block;
 	margin-right: 6px;
-}
-
+} */
+/* 
 .product__item__pic__hover li:last-child {
 	margin-right: 0;
 }
@@ -112,8 +113,8 @@
 .product__item__pic__hover li:hover a i {
 	color: #ffffff;
 	transform: rotate(360deg);
-}
-
+} */
+/* 
 .product__item__pic__hover li a {
 	font-size: 16px;
 	color: #1c1c1c;
@@ -140,8 +141,12 @@
 	-ms-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
+} */
+.product__discount__item__pic .imgSaleOff{
+	width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
-
 .product__discount__item__text {
 	text-align: center;
 	padding-top: 20px;
@@ -179,7 +184,7 @@
 	max-width: 100%;
 }
 
-.product__discount__slider.owl-carousel .owl-dots {
+/* .product__discount__slider.owl-carousel .owl-dots {
 	text-align: center;
 	margin-top: 30px;
 }
@@ -199,23 +204,23 @@
 
 .product__discount__slider.owl-carousel .owl-dots button:last-child {
 	margin-right: 0;
-}
+} */
 
 
 .product__item {
 	margin-bottom: 50px;
 }
 
-.product__item:hover .product__item__pic .product__item__pic__hover {
+/* .product__item:hover .product__item__pic .product__item__pic__hover {
 	bottom: 20px;
-}
+} */
 
 .product__item__pic {
 	height: 270px;
 	position: relative;
 	overflow: hidden;
 }
-
+/* 
 .product__item__pic__hover {
 	position: absolute;
 	left: 0;
@@ -275,7 +280,7 @@
 	-ms-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
-}
+} */
 
 .product__item__text {
 	text-align: center;
