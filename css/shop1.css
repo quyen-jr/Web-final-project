@@ -1,7 +1,7 @@
 .sidebar h4 {
     font-size: 25px;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .sidebar h4.department {
@@ -118,6 +118,58 @@
 
 
 
+.sidebar__item__3__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+  
+input[type="checkbox"] {
+    display: none;
+}
+  
+.sidebar__item__3__container label {
+    display: block;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    text-align: center;
+}
+  
+input[type="checkbox"]:checked + .sidebar__item__yellow {
+    border-color: rgb(255, 213, 0);
+    background-color: #ffff00;
+}
+  
+input[type="checkbox"]:checked + .sidebar__item__green {
+    border-color: rgb(35, 193, 4);
+    background-color: #12e212c1;
+}
+  
+input[type="checkbox"]:checked + .sidebar__item__orange {
+    border-color: rgb(230, 100, 8);
+    background-color: #ffa500;
+}
+  
+input[type="checkbox"]:checked + .sidebar__item__red {
+    border-color: rgb(190, 2, 2);
+    background-color: #ff0000c5;
+}
+  
+input[type="checkbox"]:checked + .sidebar__item__blue {
+    border-color: rgb(4, 33, 249);
+    background-color: #0f74f8b6;
+}
+  
+input[type="checkbox"]:checked + .sidebar__item__pink {
+    border-color: rgb(227, 12, 239);
+    background-color: #ffc0cb;
+}
+
+
+
 .sidebar__item__4__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -129,7 +181,7 @@
     padding: 1px;
 }
   
-.sidebar__item__size input[type="radio"] {
+.sidebar__item__size input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     width: 0;
@@ -144,8 +196,9 @@
     border: 2px solid #dedede;
   }
 
-.sidebar__item__size input[type="radio"]:checked + label {
-    border-color: #7abf2b;
+.sidebar__item__size input[type="checkbox"]:checked + label {
+    border-color: #79cf16;
+    background-color: #7edf1720;
 }
 
 
