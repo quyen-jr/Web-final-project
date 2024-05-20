@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
   <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
   <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="css/shop1.css">
   <link rel="stylesheet" href="css/shop2.css">
 </head>
 
@@ -28,10 +29,12 @@
   <section class="product spad">
     <div class="container">
       <div class="row">
+
+        <!-- code của Hòa-->
         <div class="col-lg-3 col-md-5">
           <div class="sidebar">
-            <div class="sidebar__item">
-              <h4>Department</h4>
+            <div class="sidebar__item__1">
+              <h4 class="department">Department</h4>
               <ul>
                 <li><a href="#">Fresh Meat</a></li>
                 <li><a href="#">Vegetables</a></li>
@@ -45,10 +48,10 @@
                 <li><a href="#">Oatmeal</a></li>
               </ul>
             </div>
-            <div class="sidebar__item">
+            <div class="sidebar__item__2">
               <h4>Price</h4>
               <div class="price-range-wrap">
-                <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                <div class="price-range ui-slider corner-all ui-slider-horizontal ui-widget ui-widget-content"
                   data-min="10" data-max="540">
                   <div class="ui-slider-range ui-corner-all ui-widget-header"></div>
                   <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
@@ -56,79 +59,57 @@
                 </div>
                 <div class="range-slider">
                   <div class="price-input">
-                    <input type="text" id="minamount">
-                    <input type="text" id="maxamount">
+                    <input type="text" id="minamount" readonly>
+                    <input type="text" id="maxamount" readonly>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="sidebar__item sidebar__item__color--option">
+            <div class="sidebar__item__3">
               <h4>Colors</h4>
-              <div class="sidebar__item__color sidebar__item__color--white">
-                <label for="white">
-                  White
-                  <input type="radio" id="white">
-                </label>
-              </div>
-              <div class="sidebar__item__color sidebar__item__color--gray">
-                <label for="gray">
-                  Gray
-                  <input type="radio" id="gray">
-                </label>
-              </div>
-              <div class="sidebar__item__color sidebar__item__color--red">
-                <label for="red">
-                  Red
-                  <input type="radio" id="red">
-                </label>
-              </div>
-              <div class="sidebar__item__color sidebar__item__color--black">
-                <label for="black">
-                  Black
-                  <input type="radio" id="black">
-                </label>
-              </div>
-              <div class="sidebar__item__color sidebar__item__color--blue">
-                <label for="blue">
-                  Blue
-                  <input type="radio" id="blue">
-                </label>
-              </div>
-              <div class="sidebar__item__color sidebar__item__color--green">
-                <label for="green">
-                  Green
-                  <input type="radio" id="green">
-                </label>
+              <div class="sidebar__item__button">
+                <div class="yellowBtn">
+                  <button id="yellow">Yellow</button>
+                </div>
+                <div class="orangeBtn">
+                  <button id="orange">Orange</button>
+                </div>
+                <div class="redBtn">
+                  <button id="red">Red</button>
+                </div>
+                <div class="greenBtn">
+                  <button id="green">Green</button>
+                </div>
+                <div class="pinkBtn">
+                  <button id="pink">Pink</button>
+                </div>
+                <div class="blueBtn">
+                  <button id="blue">Blue</button>
+                </div>
               </div>
             </div>
-            <div class="sidebar__item">
+            <div class="sidebar__item__4">
               <h4>Popular Size</h4>
-              <div class="sidebar__item__size">
-                <label for="large">
-                  Large
+              <div class="sidebar__item__4__container">
+                <div class="sidebar__item__size">
                   <input type="radio" id="large">
-                </label>
-              </div>
-              <div class="sidebar__item__size">
-                <label for="medium">
-                  Medium
+                  <label for="large">Large</label>
+                </div>
+                <div class="sidebar__item__size">
                   <input type="radio" id="medium">
-                </label>
-              </div>
-              <div class="sidebar__item__size">
-                <label for="small">
-                  Small
+                  <label for="medium">Medium</label>
+                </div>
+                <div class="sidebar__item__size">
                   <input type="radio" id="small">
-                </label>
-              </div>
-              <div class="sidebar__item__size">
-                <label for="tiny">
-                  Tiny
+                  <label for="small">Small</label>
+                </div>
+                <div class="sidebar__item__size">
                   <input type="radio" id="tiny">
-                </label>
+                  <label for="tiny">Tiny</label>
+                </div>
               </div>
             </div>
-            <div class="sidebar__item">
+            <div class="sidebar__item__5">
               <div class="latest-product__text">
                 <h4>Latest Products</h4>
                 <div class="latest-product__slider owl-carousel">
@@ -138,8 +119,8 @@
                         <img src="imageShop2/chuoi.jpg" alt="">
                       </div>
                       <div class="latest-product__item__text">
-                        <h6>Crab Pool Security</h6>
-                        <span>$30.00</span>
+                        <h6>Banana</h6>
+                        <span>$23.00</span>
                       </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -147,8 +128,8 @@
                         <img src="imageShop2/tao.jpg" alt="">
                       </div>
                       <div class="latest-product__item__text">
-                        <h6>Crab Pool Security</h6>
-                        <span>$30.00</span>
+                        <h6>Apple</h6>
+                        <span>$17.00</span>
                       </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -156,8 +137,8 @@
                         <img src="imageShop2/raucai.png" alt="">
                       </div>
                       <div class="latest-product__item__text">
-                        <h6>Crab Pool Security</h6>
-                        <span>$30.00</span>
+                        <h6>Vegetable</h6>
+                        <span>$25.00</span>
                       </div>
                     </a>
                   </div>
@@ -167,8 +148,8 @@
                         <img src="imageShop2/chuoi.jpg" alt="">
                       </div>
                       <div class="latest-product__item__text">
-                        <h6>Crab Pool Security</h6>
-                        <span>$30.00</span>
+                        <h6>VIP Banana</h6>
+                        <span>$200.00</span>
                       </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -176,8 +157,8 @@
                         <img src="imageShop2/tao.jpg" alt="">
                       </div>
                       <div class="latest-product__item__text">
-                        <h6>Crab Pool Security</h6>
-                        <span>$30.00</span>
+                        <h6>VIP Apple</h6>
+                        <span>$100.00</span>
                       </div>
                     </a>
                     <a href="#" class="latest-product__item">
@@ -185,8 +166,8 @@
                         <img src="imageShop2/raucai.png" alt="">
                       </div>
                       <div class="latest-product__item__text">
-                        <h6>Crab Pool Security</h6>
-                        <span>$30.00</span>
+                        <h6>VIP Vegetable</h6>
+                        <span>$300.00</span>
                       </div>
                     </a>
                   </div>
@@ -195,6 +176,8 @@
             </div>
           </div>
         </div>
+
+        <!-- code của Quyền-->
         <div class="col-lg-9 col-md-7">
           <div class="product__discount">
             <div class="section-title product__discount__title">
