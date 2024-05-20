@@ -1,39 +1,7 @@
-/******************************************************************
-  Template Name: Ogani
-  Description:  Ogani eCommerce  HTML Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
-******************************************************************/
-
-/*------------------------------------------------------------------
-[Table of contents]
-
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Service Section
-6.  Categories Section
-7.  Featured Section
-8.  Latest Product Section
-9.  Contact
-10.  Footer Style
--------------------------------------------------------------------*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 /*---------------------
   Shop Grid
 -----------------------*/
-
 .product {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -57,99 +25,22 @@
 	width: 100%;
 }
 
-/* .product__discount__item:hover .product__discount__item__pic .product__item__pic__hover {
-	bottom: 20px;
-} */
-
 .product__discount__item__pic {
-	height: 270px;
-	background-color: #7fad39;
-	/* position: relative;
-	overflow: hidden; */
-}
-
-/* .product__discount__item__pic .product__discount__percent {
-	height: 45px;
-	width: 45px;
-	background: #dd2222;
-	border-radius: 50%;
-	font-size: 14px;
-	color: #ffffff;
-	line-height: 45px;
-	text-align: center;
-	position: absolute;
-	left: 15px;
-	top: 15px;
-} */
-
-/* .product__item__pic__hover {
-	position: absolute;
-	left: 0;
-	bottom: -50px;
+	padding: 20px;
+	height: 300px;
 	width: 100%;
-	text-align: center;
-	-webkit-transition: all, 0.5s;
-	-moz-transition: all, 0.5s;
-	-ms-transition: all, 0.5s;
-	-o-transition: all, 0.5s;
-	transition: all, 0.5s;
-} */
-
-/* .product__item__pic__hover li {
-	list-style: none;
-	display: inline-block;
-	margin-right: 6px;
-} */
-/* 
-.product__item__pic__hover li:last-child {
-	margin-right: 0;
+	background-color: rgb(237, 242, 249);
 }
 
-.product__item__pic__hover li:hover a {
-	background: #7fad39;
-	border-color: #7fad39;
-}
-
-.product__item__pic__hover li:hover a i {
-	color: #ffffff;
-	transform: rotate(360deg);
-} */
-/* 
-.product__item__pic__hover li a {
-	font-size: 16px;
-	color: #1c1c1c;
-	height: 40px;
-	width: 40px;
-	line-height: 40px;
-	text-align: center;
-	border: 1px solid #ebebeb;
-	background: #ffffff;
-	display: block;
-	border-radius: 50%;
-	-webkit-transition: all, 0.5s;
-	-moz-transition: all, 0.5s;
-	-ms-transition: all, 0.5s;
-	-o-transition: all, 0.5s;
-	transition: all, 0.5s;
-}
-
-.product__item__pic__hover li a i {
-	position: relative;
-	transform: rotate(0);
-	-webkit-transition: all, 0.3s;
-	-moz-transition: all, 0.3s;
-	-ms-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
-} */
 .product__discount__item__pic .imgSaleOff{
 	width: 100%; 
     height: 100%; 
-    object-fit: cover; 
+	object-fit: contain;
 }
 .product__discount__item__text {
 	text-align: center;
 	padding-top: 20px;
+	background-color: white;
 }
 
 .product__discount__item__text span {
@@ -184,7 +75,8 @@
 	max-width: 100%;
 }
 
-/* .product__discount__slider.owl-carousel .owl-dots {
+
+.product__discount__slider.owl-carousel .owl-dots {
 	text-align: center;
 	margin-top: 30px;
 }
@@ -204,84 +96,11 @@
 
 .product__discount__slider.owl-carousel .owl-dots button:last-child {
 	margin-right: 0;
-} */
+} 
 
-
-.product__item {
-	margin-bottom: 50px;
+.bi{
+	color:black;
 }
-
-/* .product__item:hover .product__item__pic .product__item__pic__hover {
-	bottom: 20px;
-} */
-
-.product__item__pic {
-	height: 270px;
-	position: relative;
-	overflow: hidden;
-}
-/* 
-.product__item__pic__hover {
-	position: absolute;
-	left: 0;
-	bottom: -50px;
-	width: 100%;
-	text-align: center;
-	-webkit-transition: all, 0.5s;
-	-moz-transition: all, 0.5s;
-	-ms-transition: all, 0.5s;
-	-o-transition: all, 0.5s;
-	transition: all, 0.5s;
-}
-
-.product__item__pic__hover li {
-	list-style: none;
-	display: inline-block;
-	margin-right: 6px;
-}
-
-.product__item__pic__hover li:last-child {
-	margin-right: 0;
-}
-
-.product__item__pic__hover li:hover a {
-	background: #7fad39;
-	border-color: #7fad39;
-}
-
-.product__item__pic__hover li:hover a i {
-	color: #ffffff;
-	transform: rotate(360deg);
-}
-
-.product__item__pic__hover li a {
-	font-size: 16px;
-	color: #1c1c1c;
-	height: 40px;
-	width: 40px;
-	line-height: 40px;
-	text-align: center;
-	border: 1px solid #ebebeb;
-	background: #ffffff;
-	display: block;
-	border-radius: 50%;
-	-webkit-transition: all, 0.5s;
-	-moz-transition: all, 0.5s;
-	-ms-transition: all, 0.5s;
-	-o-transition: all, 0.5s;
-	transition: all, 0.5s;
-}
-
-.product__item__pic__hover li a i {
-	position: relative;
-	transform: rotate(0);
-	-webkit-transition: all, 0.3s;
-	-moz-transition: all, 0.3s;
-	-ms-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
-} */
-
 .product__item__text {
 	text-align: center;
 	padding-top: 15px;
@@ -299,11 +118,75 @@
 	color: #252525;
 	font-weight: 700;
 }
-
-.product__pagination,
-.blog__pagination {
-	padding-top: 10px;
+.product__item__pic__hover {
+	pointer-events: auto;
+	position: absolute;
+	left: -10px;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	-webkit-transition: all, 0.4s;
+	-moz-transition: all, 0.4s;
+	-ms-transition: all, 0.4s;
+	-o-transition: all,0.4s;
+	transition: all, 0.4s;
+	z-index: 1;
 }
+.product__discount__item__text{
+	position: relative;
+	z-index: 3;
+}
+.product__discount__item:hover .product__item__pic__hover {
+	bottom: 110px;
+
+}
+.product__item__pic__hover li:hover a {
+    transform: rotate(360deg);
+    transition: transform 0.3s ease; /* Thêm transition để tạo hiệu ứng xoay mềm mại */
+}
+.product__item__pic__hover .bi {
+    font-size: 20px;
+}
+
+.product__item__pic__hover li {
+	list-style: none;
+	display: inline-block;
+	margin-right:28px; 
+}
+
+.product__item__pic__hover a {
+    display: inline-block;
+    position: relative;
+}
+
+.product__item__pic__hover   a:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+	width: 45px;
+    height: 45px;
+    background-color:white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: all 0.3s ease;
+	transition: width 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+	z-index: -1;
+}
+
+.product__item__pic__hover li:hover a:before {
+    width: 40px;
+    height: 40px;
+	background-color:rgb(96, 240, 108);
+    opacity: 1;
+	transition:background-color 1s ease;
+}
+
+
 
 .product__pagination a,
 .blog__pagination a {
@@ -334,4 +217,38 @@
 .product__pagination a:last-child,
 .blog__pagination a:last-child {
 	margin-right: 0;
+}
+
+/* product 
+
+
+
+
+
+*/
+.product__item__pic{
+	padding: 20px;
+	height: 300px;
+	width: 100%;
+	background-color: #F3F6FB;
+}
+.product__item__pic__hover{
+	/* z-index: -1; */
+}
+.product__item__text{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	background-color:white;
+	position: relative;
+	z-index: 3;
+}
+.product__item:hover .product__item__pic__hover {
+	bottom: 120px;
+	z-index: 1;
+}
+.imgProduct{
+	width: 100%; 
+    height: 100%; 
+	object-fit: contain;
 }
