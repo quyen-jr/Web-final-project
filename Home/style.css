@@ -1,0 +1,128 @@
+/* Custom CSS for the Navbar */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    width: 200px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 25px; /* Khoảng cách giữa các mục */
+}
+
+.navbar-nav .nav-item:last-child {
+     margin-right: 0; /* Loại bỏ khoảng cách cho mục cuối cùng */
+}
+/* Custom CSS for Hero Section */
+
+.carousel-item {
+    height: 75vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+}
+
+#about img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Featured Products Section */
+#featured-products .card {
+    margin-bottom: 30px;
+}
+
+#featured-products .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#featured-products .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Customer Reviews Section */
+#reviewsCarousel .carousel-item {
+    text-align: center; /* Căn giữa nội dung bên trong .carousel-item */
+    padding: 40px 20px; /* Thêm khoảng đệm (padding) 40px phía trên và dưới, 20px phía trái và phải */
+}
+
+#reviewsCarousel .carousel-item img {
+    width: 100px; /* Đặt chiều rộng của hình ảnh là 100px */
+    height: 100px; /* Đặt chiều cao của hình ảnh là 100px */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ kích thước đã định, giữ tỉ lệ hình ảnh */
+    border-radius: 50%; /* Tạo hiệu ứng bo tròn cho hình ảnh, làm hình ảnh thành hình tròn */
+}
+
+#reviewsCarousel .carousel-caption {
+    bottom: 0; /* Đặt vị trí của .carousel-caption ở phía dưới của khung cha */
+}
+
+#reviewsCarousel .carousel-caption h5 {
+    margin-top: 10px; /* Thêm khoảng cách 10px ở phía trên tiêu đề (h5) */
+    font-size: 1.25rem; /* Đặt kích thước chữ của tiêu đề là 1.25rem */
+    font-weight: bold; /* Đặt độ đậm của chữ là bold */
+}
+
+
+
+
+/* Blog Section */
+#blog .card {
+    margin-bottom: 30px;
+}
+
+#blog .card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+#blog .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+}
+
+footer .btn {
+    margin: 0 10px;
+}
+
+/* Hiệu ứng thêm */
+.hero-section {
+    background-attachment: fixed;
+}
+
+/* Phóng sản phẩm khi di chuột */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
