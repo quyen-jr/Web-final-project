@@ -1,3 +1,46 @@
+body {
+	font-family: 'FontName', sans-serif; /* Thay 'FontName' bằng tên của font chữ bạn muốn sử dụng */
+  }
+
+.section-title {
+	width: 100%;
+	margin-bottom: 50px;
+}
+.title-Text{
+	margin-top: 30px;
+	width: 100%;
+	/* text-align: center; */
+}
+.section-title h2 {
+	color: #1c1c1c;
+	font-weight: 700;
+	position: relative;
+}
+
+.section-title h2:after {
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	right: 0;
+	height: 2px;
+	width: 80px;
+	background: #7fad39;
+	content: "";
+	margin: 0 auto;
+}
+
+.custom-borderButton {
+	width: 100%;
+	/* position: absolute; */
+	/* left: 0;
+	bottom: -15px;
+	right: 0;
+	height: 4px; */
+	height: 0.5px;
+	background: #ebe9e9;
+	content: "";
+	/* margin: 0 auto; */
+}
 
 /*---------------------
   Shop Grid
@@ -251,4 +294,24 @@
 	width: 100%; 
     height: 100%; 
 	object-fit: contain;
+}
+/* filter */
+.filter__found{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+/* sale off percentage */
+.sale-Off-Percentage-Img{
+	position: absolute;
+	/* / */
+	width:20%!important;
+	top:  5%;
+	/* transform: translate(-30%, -90%); */
+	animation: blink 0.2s infinite alternate;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.9; }
+    100% { opacity: 0.5; }
 }
