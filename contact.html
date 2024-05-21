@@ -25,119 +25,164 @@
 </head>
 <body>
 
-  <!-- Header
+  <Header>
 
-  </header> -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.pinimg.com/564x/3c/aa/28/3caa28fa5d82b6ecd52ebb0e7dc73000.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+        Vegetable Shops
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">PAGES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+              </li>
 
-<!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section set-bg" data-setbg="imageContact/image.png">
-    <div class="container">
-        <div class="row"> 
-            <div class="col-lg-12 text-center">
-                <div class="breadcrumb__text">
-                    <h2>Contact Us</h2>
-                    <div class="breadcrumb__option">
-                        <a href="index.html">Home</a>
-                        <span>Contact Us</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Breadcrumb Section End -->
+              <!-- Nút Đăng nhập/Đăng xuất -->
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i> SIGN IN</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> SIGN OUT</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i> SHOP</a>
+              </li>
+              <li class="nav-item">
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm</button>
+                </form>
+              </li>
+          </ul>
+      </div>
+    </nav>    
 
-<!-- Contact Section Begin -->
-<section class="contact spad">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                <div class="contact__widget">
-                    <i class="fa fa-phone fa-3x text-success"></i>
-                    <h4>Phone</h4>
-                    <p>+84-236-3962-962</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                <div class="contact__widget">
-                    <i class="fa fa-map-pin fa-3x text-success"></i>
-                    <h4>Address</h4>
-                    <p>Số 450 Đường Trần Đại Nghĩa, Điện Ngọc, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                <div class="contact__widget">
-                    <i class="fa fa-clock-o fa-3x text-success"></i>
-                    <h4>Open time</h4>
-                    <p>10:00 am to 23:00 pm</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 text-center">
-                <div class="contact__widget">
-                    <i class="fa fa-envelope fa-3x text-success"></i>
-                    <h4>Email</h4>
-                    <p>hellobruhbruh@oganic.com</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Contact Section End -->
+  </header>
 
-<!-- Map Begin -->
-<div class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15342.383290483447!2d108.24740179999999!3d15.982469799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1716217255380!5m2!1svi!2s"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <div class="map-inside">
-    <i class="fa fa-map-pin fa-3x text-success ml-2 mb-2"></i>
-    <div class="inside-widget">
-      <h4>Đà Nẵng</h4>
-      <ul>
-        <li>Phone: +84-236-3962-962</li>
-        <li>Add: Số 450 Đường Trần Đại Nghĩa, Điện Ngọc, Ngũ Hành Sơn, Đã Nẵng, Việt Nam</li>
-      </ul>
+  <!-- Breadcrumb Section Begin -->
+  <section style="background-image: url(imageContact/image.png)" 
+          class="breadcrumb-section">
+      <div class="container">
+          <div class="row"> 
+              <div class="col-lg-12 text-center">
+                  <div class="breadcrumb__text">
+                      <h2>Contact Us</h2>
+                      <div class="breadcrumb__option">
+                          <a href="index.html">Home</a>
+                          <span>Contact Us</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Breadcrumb Section End -->
+
+  <!-- Contact Section Begin -->
+  <section class="contact spad">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                  <div class="contact__widget">
+                      <i class="fa fa-phone fa-3x text-success"></i>
+                      <h4>Phone</h4>
+                      <p>+84-236-3962-962</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                  <div class="contact__widget">
+                      <i class="fa fa-map-pin fa-3x text-success"></i>
+                      <h4>Address</h4>
+                      <p>Số 450 Đường Trần Đại Nghĩa, Điện Ngọc, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                  <div class="contact__widget">
+                      <i class="fa fa-clock-o fa-3x text-success"></i>
+                      <h4>Open time</h4>
+                      <p>10:00 am to 23:00 pm</p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                  <div class="contact__widget">
+                      <i class="fa fa-envelope fa-3x text-success"></i>
+                      <h4>Email</h4>
+                      <p>hellobruhbruh@oganic.com</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Map Begin -->
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15342.383290483447!2d108.24740179999999!3d15.982469799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1716217255380!5m2!1svi!2s"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map-inside">
+      <i class="fa fa-map-pin fa-3x text-success ml-2 mb-2"></i>
+      <div class="inside-widget">
+        <h4>Đà Nẵng</h4>
+        <ul>
+          <li>Phone: +84-236-3962-962</li>
+          <li>Add: Số 450 Đường Trần Đại Nghĩa, Điện Ngọc, Ngũ Hành Sơn, Đã Nẵng, Việt Nam</li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-<!-- Map End -->
+  <!-- Map End -->
 
-<!-- Contact Form Begin -->
-<div class="contact-form spad">
-  <div class="section-content">
-		<h1 class="section-header">Get in <span class="content-header"> Touch with us</span></h1>
-	</div>
-	<div class="contact-section">
-		<div class="container">
-			<form class="row">
-				<div class="col-md-6 form-line">
-		  		<div class="form-group">
-		  			<label for="exampleInputUsername">Your name</label>
-				  	<input type="text" class="form-control" id="" placeholder=" Enter Name">
-			  	</div>
-					<div class="form-group">
-			    	<label for="exampleInputEmail">Email Address</label>
-			    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email">
-			  	</div>	
-					<div class="form-group">
-			    	<label for="telephone">Mobile No.</label>
-			    	<input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
-	  			</div>
-		  	</div>
-		  	<div class="col-md-6">
-		  		<div class="form-group">
-						<label for ="description">Message</label>
-	  			 	<textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-	  			</div>
-	  			<div>
-	  				<button type="button" class="btn btn-light submit">
-              <i class="fa fa-paper-plane-o mr-2"></i>Send Message</button>
-	  			</div>
-				</div>
-			</form>
-		</div>
+  <!-- Contact Form Begin -->
+  <div class="contact-form spad">
+    <div class="section-content">
+      <h1 class="section-header">Get in <span class="content-header"> Touch with us</span></h1>
+    </div>
+    <div class="contact-section">
+      <div class="container">
+        <form class="row">
+          <div class="col-md-6 form-line">
+            <div class="form-group">
+              <label for="exampleInputUsername">Your name</label>
+              <input type="text" class="form-control" id="" placeholder=" Enter Name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail">Email Address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email">
+            </div>	
+            <div class="form-group">
+              <label for="telephone">Mobile No.</label>
+              <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for ="description">Message</label>
+              <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+            </div>
+            <div>
+              <button type="button" class="btn btn-light submit">
+                <i class="fa fa-paper-plane-o mr-2"></i>Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-</div>
-<!-- Contact Form End -->
+  <!-- Contact Form End -->
 
   <!-- Js Plugins -->
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -147,8 +192,6 @@
   <script src="js/jquery.slicknav.js"></script>
   <script src="js/mixitup.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
-  <!-- custom -->
-  <script src="js/main.js"></script>
+  
 </body>
 </html>
