@@ -49,9 +49,17 @@
 
 .price-range-wrap .ui-slider-handle {
     background-color: #ffffff; /* Màu nền ban đầu của điểm điều chỉnh */
+    border-radius: 100%;
     border: 2px solid #37b848; /* Viền của điểm điều chỉnh */
 }
 
+.price-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+}
 
 
 
@@ -79,6 +87,7 @@ input[type="checkbox"] {
 .sidebar__item__3__container label {
     display: flex;
     justify-content: center;
+    font-size: 17px;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 15px;
@@ -126,6 +135,7 @@ input[type="checkbox"]:checked + .sidebar__item__pink {
 .sidebar__item__4 label {
     display: flex;
     justify-content: center;
+    font-size: 17px;
     padding: 5px;
     border: 2px solid #dedede;
     cursor: pointer;
@@ -147,4 +157,15 @@ input[type="checkbox"]:checked + .sidebar__item__pink {
 .sidebar__item__5 .latest-product__item__pic {
     flex: 0 0 60px;
     margin-right: 10px;
+}
+
+.latest-product__item,
+.latest-product__item__text {
+    color: #585353;
+    font-weight: bold;
+}
+
+.latest-product__item:hover,
+.latest-product__item__text:hover {
+    color: #79cf16;
 }
