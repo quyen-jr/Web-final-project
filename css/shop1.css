@@ -32,7 +32,6 @@
 }
 
 
-
 .price-range-wrap {
     background-color: #ffffff; /* Điều chỉnh màu nền */
     color: #333; /* Điều chỉnh màu chữ */
@@ -41,13 +40,20 @@
 }
 
 .price-range-wrap .ui-slider-horizontal {
-    background: #37b848; /* Điều chỉnh màu nền của thanh trượt */
+    background-color: #e3e3e3; /* Màu nền ban đầu của thanh trượt */
+}
+
+.price-range-wrap .ui-slider-range {
+    background-color: #37b848; /* Màu nền của phần thanh trượt được tô màu */
 }
 
 .price-range-wrap .ui-slider-handle {
-    background: #fff; /* Điều chỉnh màu nền của điểm điều chỉnh */
-    border: 1px solid #37b848; /* Điều chỉnh viền của điểm điều chỉnh */
+    background-color: #ffffff; /* Màu nền ban đầu của điểm điều chỉnh */
+    border: 2px solid #37b848; /* Viền của điểm điều chỉnh */
 }
+
+
+
 
 .price-input input[readonly] {
     border: none; /* Ẩn viền */

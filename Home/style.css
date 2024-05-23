@@ -108,12 +108,76 @@
 }
 
 /* Footer */
+/* Footer Background */
 footer {
-    padding: 20px 0;
+    background-color: #343a40; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 40px 0; /* Khoảng cách giữa các phần tử bên trong */
 }
 
-footer .btn {
-    margin: 0 10px;
+/* Navigation Links Style */
+footer ul {
+    padding: 0;
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+}
+
+footer ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục trong danh sách */
+}
+
+footer ul li a {
+    color: #fff; /* Màu chữ của các liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+footer ul li a:hover {
+    color: #ffc107; /* Màu chữ khi di chuột qua */
+}
+
+/* Newsletter Form Style */
+footer form input[type="email"] {
+    margin: 0 auto; /* Đặt margin tự động để căn giữa */
+    width: 90%; /* Độ rộng của ô nhập email */
+    padding: 10px; /* Khoảng cách nội dung và viền của ô nhập */
+    border: none; /* Loại bỏ viền */
+    border-radius: 4px; /* Bo tròn các góc */
+    margin-bottom: 10px; /* Khoảng cách giữa các ô nhập */
+}
+
+footer form button[type="submit"] {
+    background-color: #ffc107; /* Màu nền của nút gửi */
+    border: none; /* Loại bỏ viền */
+    color: #343a40; /* Màu chữ của nút */
+    padding: 10px 20px; /* Khoảng cách nội dung và viền của nút */
+    border-radius: 4px; /* Bo tròn các góc */
+    cursor: pointer; /* Con trỏ khi di chuột qua */
+}
+
+footer form button[type="submit"]:hover {
+    background-color: #ffca28; /* Màu nền của nút khi di chuột qua */
+}
+
+/* Social Media Icons */
+footer .fab {
+    font-size: 24px; /* Kích thước của biểu tượng */
+    margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        text-align: center; /* Canh giữa các phần tử */
+    }
+
+    footer .text-md-start {
+        text-align: center !important; /* Canh giữa văn bản trong phần này */
+    }
+
+    footer .text-md-end {
+        text-align: center !important; /* Canh giữa văn bản trong phần này */
+        margin-top: 20px; /* Khoảng cách từ trên xuống */
+    }
 }
 
 /* Hiệu ứng thêm */
