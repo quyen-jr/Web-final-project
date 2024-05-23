@@ -49,9 +49,17 @@
 
 .price-range-wrap .ui-slider-handle {
     background-color: #ffffff; /* Màu nền ban đầu của điểm điều chỉnh */
+    border-radius: 100%;
     border: 2px solid #37b848; /* Viền của điểm điều chỉnh */
 }
 
+.price-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+}
 
 
 

@@ -103,11 +103,10 @@
         value: minPrice,
         slide: function (event, ui) {
             minamount.val('$' + ui.value);
-            maxamount.val('$' + ui.value);
         }
     });
     minamount.val('$' + rangeSlider.slider("value"));
-    maxamount.val('$' + rangeSlider.slider("value"));
+    maxamount.val('$' + maxPrice);
 
 
     // var rangeSlider = $(".price-range"),
