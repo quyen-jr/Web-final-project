@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    font-family: asans-serif;
+    font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     font-smooth: antialiased;
 }
@@ -12,8 +12,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    color: #111111;
+    /* margin: 0; */
     font-weight: 400;
     font-family: sans-serif;
 }
@@ -45,7 +44,6 @@ h6 {
 p {
     font-size: 16px;
     font-family: sans-serif;
-    color: #6f6f6f;
     font-weight: 400;
     line-height: 26px;
     margin: 0 0 15px 0;
@@ -123,6 +121,13 @@ ol {
 .contact {
     padding-top: 80px;
     padding-bottom: 50px;
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(white, #343a40);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgba(161, 185, 99, 0.5), white);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
 }
 
 .contact__widget {
@@ -237,13 +242,12 @@ ol {
     font-family: 'Lora', sans-serif;
     padding-top: 60px;
     width: 100%;
-    width: 100vw;
     height: 550px;
     background: #3a6186;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3a6186, #89253e);
+    background: -webkit-linear-gradient(white, #343a40);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3a6186, #89253e);
+    background: linear-gradient(white, #343a40);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
 }
@@ -290,7 +294,64 @@ textarea.form-control {
 
 }
 
+/*---------------------
+  Footer
+-----------------------*/
 
+footer {
+    background-color: #343a40; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 40px 0; /* Khoảng cách giữa các phần tử bên trong */
+}
+
+/* Navigation Links Style */
+footer ul {
+    padding: 0;
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+}
+
+footer ul li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục trong danh sách */
+}
+
+footer ul li a {
+    color: #fff; /* Màu chữ của các liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+footer ul li a:hover {
+    color: #ffc107; /* Màu chữ khi di chuột qua */
+}
+
+/* Newsletter Form Style */
+footer form input[type="email"] {
+    margin: 0 auto; /* Đặt margin tự động để căn giữa */
+    width: 90%; /* Độ rộng của ô nhập email */
+    padding: 10px; /* Khoảng cách nội dung và viền của ô nhập */
+    border: none; /* Loại bỏ viền */
+    border-radius: 4px; /* Bo tròn các góc */
+    margin-bottom: 10px; /* Khoảng cách giữa các ô nhập */
+}
+
+footer form button[type="submit"] {
+    background-color: #ffc107; /* Màu nền của nút gửi */
+    border: none; /* Loại bỏ viền */
+    color: #343a40; /* Màu chữ của nút */
+    padding: 10px 20px; /* Khoảng cách nội dung và viền của nút */
+    border-radius: 4px; /* Bo tròn các góc */
+    cursor: pointer; /* Con trỏ khi di chuột qua */
+}
+
+footer form button[type="submit"]:hover {
+    background-color: #ffca28; /* Màu nền của nút khi di chuột qua */
+}
+
+/* Social Media Icons */
+footer .fa {
+    font-size: 24px; /* Kích thước của biểu tượng */
+    margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+}
 
 
 
