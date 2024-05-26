@@ -1,9 +1,17 @@
 
 /* Footer */
-/* ul {
+/* .footer-menu ul {
     margin: 0px;
     padding: 0px;
+}
+.footer-widget-heading ul {
+  margin: 0px;
+  padding: 0px;
 } */
+.ul-footer{
+  margin: 0;
+  padding: 0;
+}
 .footer-section {
   background: #414040;
   position: relative;
