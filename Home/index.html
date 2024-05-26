@@ -1,522 +1,710 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vegetable Shops</title>
     <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="https://i.pinimg.com/564x/3c/aa/28/3caa28fa5d82b6ecd52ebb0e7dc73000.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://i.pinimg.com/564x/3c/aa/28/3caa28fa5d82b6ecd52ebb0e7dc73000.jpg"
+          alt="Logo"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+        />
         Vegetable Shops
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">PAGES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../contact.html">CONTACT</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PAGES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact.html">CONTACT</a>
+          </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="../shop.html"><i class="fas fa-shopping-cart"></i> SHOP</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../shop.html"
+              ><i class="fas fa-shopping-cart"></i> SHOP</a
+            >
+          </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="../shoppingCart.html"><i class="fas fa-shopping-cart"></i> SHOP CART</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../shoppingCart.html"
+              ><i class="fas fa-shopping-cart"></i> SHOP CART</a
+            >
+          </li>
 
-            <!-- Nút Đăng nhập/Đăng xuất -->
-            <li class="nav-item">
-                <a class="nav-link" href="../Login/index.html"> <i class="fas fa-sign-in-alt"></i>  </a>
-            </li>
+          <!-- Nút Đăng nhập/Đăng xuất -->
+          <li class="nav-item">
+            <a class="nav-link" href="../Login/index.html">
+              <i class="fas fa-sign-in-alt"></i>
+            </a>
+          </li>
 
-
-            <li class="nav-item">
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm</button>
-                </form>
-            </li>
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Tìm kiếm"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Tìm
+              </button>
+            </form>
+          </li>
         </ul>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<!-- Hero Section -->
-<div id="heroCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
+    <!-- Hero Section -->
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="ban1.jpg" class="d-block w-100" alt="Banner 1">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Fresh Vegetables</h1>
-                <p>Healthy and organic produce</p>
-                <a href="#" class="btn btn-primary" style="background-color: #50A625; color: white; font-size: 20px; font-weight: bold;">Shop Now</a>
-
-
-            </div>
+          <img src="img4.jpg" class="d-block w-100" alt="Banner 1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Fresh Vegetables</h1>
+            <p>Healthy and organic produce</p>
+          </div>
         </div>
 
         <div class="carousel-item">
-            <img src="ban3.jpg" class="d-block w-100" alt="Banner 2">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Organic Fruits</h1>
-                <p>Natural and fresh fruits</p>
-                <a href="#" class="btn btn-primary" style="background-color: #50A625; color: white; font-size: 20px; font-weight: bold;">Learn More</a>
-            </div>
+          <img src="img2.jpg" class="d-block w-100" alt="Banner 2" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Organic Fruits</h1>
+            <p>Natural and fresh fruits</p>
+          </div>
         </div>
 
         <div class="carousel-item">
-            <img src="ban2.jpg" class="d-block w-100" alt="Banner 3">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Farm to Table</h1>
-                <p>Direct from the farm to your home</p>
-                <a href="#" class="btn btn-primary" style="background-color: #50A625; color: white; font-size: 20px; font-weight: bold;">Explore</a>
-            </div>
+          <img src="img5.jpg" class="d-block w-100" alt="Banner 3" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Farm to Table</h1>
+            <p>Direct from the farm to your home</p>
+          </div>
         </div>
-
-    </div>
-    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#heroCarousel"
+        role="button"
+        data-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#heroCarousel"
+        role="button"
+        data-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<!-- About Section -->
-<div class="container my-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h2>About Our Shop</h2>
-            <p>At Green Orchard, we pride ourselves on offering an extensive selection of the freshest vegetables and the most succulent organic fruits. Our journey began with a simple mission: to bring the farm's bounty directly to your table, ensuring that every bite is packed with flavor and vitality. We believe that food should not only taste good but also do good for your health and the environment.</p>
-            <p>Our commitment to quality is unwavering. We meticulously source our produce from trusted local farmers who share our values of sustainable and ethical farming practices. By fostering close relationships with these dedicated growers, we ensure that every apple, leafy green, and root vegetable meets our high standards for organic certification.</p>
-            <p>Green Orchard isn't just a marketplace; it's a community hub where food lovers can come together to celebrate the joys of healthy eating. Our knowledgeable staff is always on hand to guide you through our diverse offerings and share tips on how to incorporate more greens into your diet. Whether you're looking for exotic ingredients for your next culinary adventure or the comfort of traditional flavors, we've got you covered.</p>
-            <p>We invite you to experience the difference that fresh, organic produce makes. Visit us and discover a world of vibrant tastes and colors, where quality produce is the cornerstone of every meal. Join us on our mission to nourish our community with the highest quality fruits and vegetables, ensuring freshness, great taste, and a healthier lifestyle for our customers.</p>
-        </div>
-        <div class="col-md-6">
-            <img src="https://i.pinimg.com/564x/ae/23/6a/ae236a41f464be50de76b286d9949168.jpg" class="img-fluid" alt="About Us">
-        </div>
+      </a>
     </div>
-</div>
 
-<div class = "cach"> </div>
-
-<!-- Featured Products Section -->
-<div class="container my-5">
-    <h2 class="text-center">Featured Products</h2>
-    <div class="row">
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="pro1.jpg" class="card-img-top" alt="Juicy Red Apples">
-                <div class="card-body">
-                    <h5 class="card-title">Juicy Red Apples</h5>
-                    <p class="card-text">Dive into the crisp sweetness of our freshly-picked red apples. Grown in sun-kissed orchards, each bite bursts with the wholesome goodness of nature's candy. Ideal for snacking or adding to recipes.</p>
-
-                    <hr> <!-- Thêm đường kẻ -->
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="card-text mb-0"><strong>$5.00</strong></p>
-                        <a href="#" class="btn btn-primary" style="background-color: #50A625; color: white; font-size: 20px; ">Buy Now</a>
-                    </div>
-                </div>
-            </div>
+    <!-- About Section -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>About Our Shop</h2>
+          <p>
+            At Green Orchard, we pride ourselves on offering an extensive
+            selection of the freshest vegetables and the most succulent organic
+            fruits. Our journey began with a simple mission: to bring the farm's
+            bounty directly to your table, ensuring that every bite is packed
+            with flavor and vitality. We believe that food should not only taste
+            good but also do good for your health and the environment.
+          </p>
+          <p>
+            Our commitment to quality is unwavering. We meticulously source our
+            produce from trusted local farmers who share our values of
+            sustainable and ethical farming practices. By fostering close
+            relationships with these dedicated growers, we ensure that every
+            apple, leafy green, and root vegetable meets our high standards for
+            organic certification.
+          </p>
+          <p>
+            Green Orchard isn't just a marketplace; it's a community hub where
+            food lovers can come together to celebrate the joys of healthy
+            eating. Our knowledgeable staff is always on hand to guide you
+            through our diverse offerings and share tips on how to incorporate
+            more greens into your diet. Whether you're looking for exotic
+            ingredients for your next culinary adventure or the comfort of
+            traditional flavors, we've got you covered.
+          </p>
+          <p>
+            We invite you to experience the difference that fresh, organic
+            produce makes. Visit us and discover a world of vibrant tastes and
+            colors, where quality produce is the cornerstone of every meal. Join
+            us on our mission to nourish our community with the highest quality
+            fruits and vegetables, ensuring freshness, great taste, and a
+            healthier lifestyle for our customers.
+          </p>
         </div>
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="pro2.jpg" class="card-img-top" alt="Organic Carrots">
-                <div class="card-body">
-                    <h5 class="card-title">Organic Carrots</h5>
-                    <p class="card-text">Enjoy the fresh, crunchy taste of our organic carrots. Grown without synthetic pesticides, these carrots are perfect for a healthy snack or as a versatile ingredient in your favorite dishes.</p>
-
-                    <hr> <!-- Thêm đường kẻ -->
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="card-text mb-0"><strong>$5.00</strong></p>
-                        <a href="#" class="btn btn-primary" style="background-color: #50A625; color: white; font-size: 20px; ">Buy Now</a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-6">
+          <img
+            src="https://i.pinimg.com/564x/ae/23/6a/ae236a41f464be50de76b286d9949168.jpg"
+            class="img-fluid"
+            alt="About Us"
+          />
         </div>
-
-
-        <div class="col-md-4">
-            <div class="card">
-                <img src="https://i.pinimg.com/564x/fb/62/4b/fb624bd88181534dff0fc1c80c384cbf.jpg" class="card-img-top" alt="Ripe Yellow Bananas">
-                <div class="card-body">
-                    <h5 class="card-title">Ripe Yellow Bananas</h5>
-                    <p class="card-text">Savor the sweet and creamy flavor of our ripe yellow bananas. Hand-picked at their peak, these bananas are perfect for a quick energy boost or as a key ingredient in smoothies and desserts.</p>
-
-                    <hr> <!-- Thêm đường kẻ -->
-
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="card-text mb-0"><strong>$3.00</strong></p>
-                        <a href="#" class="btn btn-primary" style="background-color: #50A625; color: white; font-size: 20px; ">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
+      </div>
     </div>
-</div>
 
+    <div class="cach"></div>
 
+    <!-- Featured Products Section -->
+    <div class="container my-5">
+      <h2 class="text-center">Featured Products</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="pro1.jpg" class="card-img-top" alt="Juicy Red Apples" />
+            <div class="card-body">
+              <h5 class="card-title">Juicy Red Apples</h5>
+              <p class="card-text">
+                Dive into the crisp sweetness of our freshly-picked red apples.
+                Grown in sun-kissed orchards, each bite bursts with the
+                wholesome goodness of nature's candy. Ideal for snacking or
+                adding to recipes.
+              </p>
 
+              <hr />
+              <!-- Thêm đường kẻ -->
 
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-0"><strong>$5.00</strong></p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #50a625;
+                    color: white;
+                    font-size: 20px;
+                  "
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-4">
+          <div class="card">
+            <img src="pro2.jpg" class="card-img-top" alt="Organic Carrots" />
+            <div class="card-body">
+              <h5 class="card-title">Organic Carrots</h5>
+              <p class="card-text">
+                Enjoy the fresh, crunchy taste of our organic carrots. Grown
+                without synthetic pesticides, these carrots are perfect for a
+                healthy snack or as a versatile ingredient in your favorite
+                dishes.
+              </p>
 
+              <hr />
+              <!-- Thêm đường kẻ -->
 
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-0"><strong>$5.00</strong></p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #50a625;
+                    color: white;
+                    font-size: 20px;
+                  "
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/fb/62/4b/fb624bd88181534dff0fc1c80c384cbf.jpg"
+              class="card-img-top"
+              alt="Ripe Yellow Bananas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ripe Yellow Bananas</h5>
+              <p class="card-text">
+                Savor the sweet and creamy flavor of our ripe yellow bananas.
+                Hand-picked at their peak, these bananas are perfect for a quick
+                energy boost or as a key ingredient in smoothies and desserts.
+              </p>
 
+              <hr />
+              <!-- Thêm đường kẻ -->
 
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text mb-0"><strong>$3.00</strong></p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #50a625;
+                    color: white;
+                    font-size: 20px;
+                  "
+                  >Buy Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="cach"></div>
 
-<div class = "cach"> </div>
+    <!-- Bắt - Sửa -->
+    <!-- Customer Reviews Section -->
 
-<!-- Bắt - Sửa -->
-<!-- Customer Reviews Section -->
-
-<!-- Customer Reviews Section -->
-<div class="container my-5 customer-reviews">
-    <h2 class="text-center mb-4">Customer Reviews</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Customer Reviews Section -->
+    <div class="container my-5 customer-reviews">
+      <h2 class="text-center mb-4">Customer Reviews</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
         <!-- Customer Review 1 -->
         <div class="col">
-            <div class="card text-center h-100 border-0 shadow-sm customer-card-01">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <img src="https://i.pinimg.com/564x/30/75/69/307569a1c5442fa1cc8f99fd0740edc0.jpg" class="rounded-circle mb-3" alt="Customer 1" width="100" height="100">
-
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <p class="card-text">"I was truly impressed with the freshness of the fruits and vegetables. "</p>
-                    <br>
-                    <h5 class="card-title">- Lee Thai Lam -</h5>
-                </div>
+          <div
+            class="card text-center h-100 border-0 shadow-sm customer-card-01"
+          >
+            <div class="card-body d-flex flex-column align-items-center">
+              <img
+                src="https://i.pinimg.com/564x/30/75/69/307569a1c5442fa1cc8f99fd0740edc0.jpg"
+                class="rounded-circle mb-3"
+                alt="Customer 1"
+                width="100"
+                height="100"
+              />
             </div>
+            <div class="card-footer bg-transparent border-0">
+              <p class="card-text">
+                "I was truly impressed with the freshness of the fruits and
+                vegetables. "
+              </p>
+              <br />
+              <h5 class="card-title">- Lee Thai Lam -</h5>
+            </div>
+          </div>
         </div>
         <!-- Customer Review 2 -->
         <div class="col">
-            <div class="card text-center h-100 border-0 shadow-sm customer-card-02">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <img src="https://i.pinimg.com/564x/1e/0d/7f/1e0d7f3aba4f48ae07473b5e004a9387.jpg" class="rounded-circle mb-3" alt="Customer 2" width="100" height="100">
-
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <p class="card-text">"I love the freshness of their produce."</p>
-                    <br>
-                    <h5 class="card-title">- Le Thi Tham -</h5>
-                </div>
+          <div
+            class="card text-center h-100 border-0 shadow-sm customer-card-02"
+          >
+            <div class="card-body d-flex flex-column align-items-center">
+              <img
+                src="https://i.pinimg.com/564x/1e/0d/7f/1e0d7f3aba4f48ae07473b5e004a9387.jpg"
+                class="rounded-circle mb-3"
+                alt="Customer 2"
+                width="100"
+                height="100"
+              />
             </div>
+            <div class="card-footer bg-transparent border-0">
+              <p class="card-text">"I love the freshness of their produce."</p>
+              <br />
+              <h5 class="card-title">- Le Thi Tham -</h5>
+            </div>
+          </div>
         </div>
         <!-- Customer Review 3 -->
         <div class="col">
-            <div class="card text-center h-100 border-0 shadow-sm customer-card-03">
-                <div class="card-body d-flex flex-column align-items-center">
-                    <img src="https://i.pinimg.com/564x/24/a0/f8/24a0f86a1509ef87ecc02b5ce8168a29.jpg" class="rounded-circle mb-3" alt="Customer 3" width="100" height="100">
-
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <p class="card-text">"Highly recommend to everyone."</p>
-                    <br>
-                    <h5 class="card-title">- Pham Anh Quyen -</h5>
-                </div>
+          <div
+            class="card text-center h-100 border-0 shadow-sm customer-card-03"
+          >
+            <div class="card-body d-flex flex-column align-items-center">
+              <img
+                src="https://i.pinimg.com/564x/24/a0/f8/24a0f86a1509ef87ecc02b5ce8168a29.jpg"
+                class="rounded-circle mb-3"
+                alt="Customer 3"
+                width="100"
+                height="100"
+              />
             </div>
+            <div class="card-footer bg-transparent border-0">
+              <p class="card-text">"Highly recommend to everyone."</p>
+              <br />
+              <h5 class="card-title">- Pham Anh Quyen -</h5>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <!-- Kết - Sửa -->
+    <div class="cach"></div>
 
-
-
-
-
-
-
-
-<!-- Kết - Sửa -->
-<div class = "cach"> </div>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Blog Section -->
-<div class="container my-5">
-    <h2 class="text-center">Latest Blog Posts</h2>
-    <div class="row">
+    <!-- Blog Section -->
+    <div class="container my-5">
+      <h2 class="text-center">Latest Blog Posts</h2>
+      <div class="row">
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <img src="f1.jpg" class="card-img-top" alt="Exotic Dragon Fruit">
-                <div class="card-body d-flex flex-column">
-                    <hr style="border-top: 2px solid #28a745; width: 100%; margin-bottom: 10px;">
-                    <h5 class="card-title">Exotic Dragon Fruit</h5>
-                    <p class="card-text">Embark on a tropical journey with our Exotic Dragon Fruit. Sourced from the lush fields of Vietnam, its vibrant hues and unique flavor are a testament to the care and passion that go into its cultivation.</p>
+          <div class="card h-100 shadow-sm">
+            <img src="f1.jpg" class="card-img-top" alt="Exotic Dragon Fruit" />
+            <div class="card-body d-flex flex-column">
+              <hr
+                style="
+                  border-top: 2px solid #28a745;
+                  width: 100%;
+                  margin-bottom: 10px;
+                "
+              />
+              <h5 class="card-title">Exotic Dragon Fruit</h5>
+              <p class="card-text">
+                Embark on a tropical journey with our Exotic Dragon Fruit.
+                Sourced from the lush fields of Vietnam, its vibrant hues and
+                unique flavor are a testament to the care and passion that go
+                into its cultivation.
+              </p>
 
-                    <br>
+              <br />
 
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="card-text"><strong>$15.00</strong></p>
-                        <button class="buttonnn">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                    <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                    <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
-                            </div>
-                        </button>
-                    </div>
-
-
-                </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text"><strong>$15.00</strong></p>
+                <button class="buttonnn">
+                  <span>Add to cart</span>
+                  <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                      <polyline
+                        points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"
+                      ></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- Blog Post 2 -->
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <img src="f2.jpg" class="card-img-top" alt="Sumptuous Blueberries">
-                <div class="card-body d-flex flex-column">
-                    <hr style="border-top: 2px solid #28a745; width: 100%; margin-bottom: 10px;">
-                    <h5 class="card-title">Sumptuous Blueberries</h5>
-                    <p class="card-text">Dive into the world of Sumptuous Blueberries. Handpicked from the verdant farms of Oregon, their deep blue color and burst of sweetness capture the essence of a summer's delight.</p>
-                    <br>
+          <div class="card h-100 shadow-sm">
+            <img
+              src="f2.jpg"
+              class="card-img-top"
+              alt="Sumptuous Blueberries"
+            />
+            <div class="card-body d-flex flex-column">
+              <hr
+                style="
+                  border-top: 2px solid #28a745;
+                  width: 100%;
+                  margin-bottom: 10px;
+                "
+              />
+              <h5 class="card-title">Sumptuous Blueberries</h5>
+              <p class="card-text">
+                Dive into the world of Sumptuous Blueberries. Handpicked from
+                the verdant farms of Oregon, their deep blue color and burst of
+                sweetness capture the essence of a summer's delight.
+              </p>
+              <br />
 
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="card-text"><strong>$12.00</strong></p>
-                        <button class="buttonnn">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                    <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                    <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
-                            </div>
-                        </button>
-                    </div>
-
-                </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text"><strong>$12.00</strong></p>
+                <button class="buttonnn">
+                  <span>Add to cart</span>
+                  <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                      <polyline
+                        points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"
+                      ></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- Blog Post 3 -->
         <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-                <img src="f3.jpg" class="card-img-top" alt="Heirloom Tomatoes">
-                <div class="card-body d-flex flex-column">
-                    <hr style="border-top: 2px solid #28a745; width: 100%; margin-bottom: 10px;">
-                    <h5 class="card-title">Heirloom Tomatoes</h5>
-                    <!-- Thêm một đường kẻ ngang sau tiêu đề -->
+          <div class="card h-100 shadow-sm">
+            <img src="f3.jpg" class="card-img-top" alt="Heirloom Tomatoes" />
+            <div class="card-body d-flex flex-column">
+              <hr
+                style="
+                  border-top: 2px solid #28a745;
+                  width: 100%;
+                  margin-bottom: 10px;
+                "
+              />
+              <h5 class="card-title">Heirloom Tomatoes</h5>
+              <!-- Thêm một đường kẻ ngang sau tiêu đề -->
 
-                    <p class="card-text">Explore the rich tapestry of flavors with our Heirloom Tomatoes. Grown with traditional seeds passed down through generations, each tomato offers a unique taste of history and heritage.</p>
-                    <br>
+              <p class="card-text">
+                Explore the rich tapestry of flavors with our Heirloom Tomatoes.
+                Grown with traditional seeds passed down through generations,
+                each tomato offers a unique taste of history and heritage.
+              </p>
+              <br />
 
-                    <div class="d-flex justify-content-between align-items-center">
-                        <p class="card-text"><strong>$9.00</strong></p>
-                        <button class="buttonnn">
-                            <span>Add to cart</span>
-                            <div class="cart">
-                                <svg viewBox="0 0 36 26">
-                                    <polyline points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"></polyline>
-                                    <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
-                                </svg>
-                            </div>
-                        </button>
-                    </div>
-                </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text"><strong>$9.00</strong></p>
+                <button class="buttonnn">
+                  <span>Add to cart</span>
+                  <div class="cart">
+                    <svg viewBox="0 0 36 26">
+                      <polyline
+                        points="1 2.5 6 2.5 10 18.5 25.5 18.5 28.5 7.5 7.5 7.5"
+                      ></polyline>
+                      <polyline points="15 13.5 17 15.5 22 10.5"></polyline>
+                    </svg>
+                  </div>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-
-
-
+      </div>
     </div>
-</div>
 
-<div class = "cach"> </div>
+    <div class="cach"></div>
 
-<footer class="footer-section">
-    <div class="container">
+    <footer class="footer-section">
+      <div class="container">
         <div class="footer-cta pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="cta-text">
-                            <h4>Find us</h4>
-                            <span>1010 Avenue, sw 54321, chandigarh</span>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
                 </div>
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <i class="fas fa-phone"></i>
-                        <div class="cta-text">
-                            <h4>Call us</h4>
-                            <span>9876543210 0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <i class="far fa-envelope-open"></i>
-                        <div class="cta-text">
-                            <h4>Mail us</h4>
-                            <span>mail@info.com</span>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>9876543210 0</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <h3 style=" color: #50A625">Vegetable Shop</h3>
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <h3 style="color: #50a625">Vegetable Shop</h3>
 
-                        <div class="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="footer-social-icon">
-                            <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                        </div>
-                    </div>
+                <div class="footer-text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consec tetur adipisicing elit,
+                    sed do eiusmod tempor incididuntut consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.
+                  </p>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <br>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Shop Cart</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
-                        </div>
-                        <br>
-                        <div class="footer-text mb-25">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button><i class="fab fa-telegram-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <br />
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Shop Cart</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <br />
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="copyright-area">
+      </div>
+      <div class="copyright-area">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2024</p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Policy</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2024</p>
+              </div>
             </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</footer>
-<script>!function(s,u,b,i,z){var o,t,r,y;s[i]||(s._sbzaccid=z,s[i]=function(){s[i].q.push(arguments)},s[i].q=[],s[i]("setAccount",z),r=["widget.subiz.net","storage.googleapis"+(t=".com"),"app.sbz.workers.dev",i+"a"+(o=function(k,t){var n=t<=6?5:o(k,t-1)+o(k,t-3);return k!==t?n:n.toString(32)})(20,20)+t,i+"b"+o(30,30)+t,i+"c"+o(40,40)+t],(y=function(k){var t,n;s._subiz_init_2094850928430||r[k]&&(t=u.createElement(b),n=u.getElementsByTagName(b)[0],t.async=1,t.src="https://"+r[k]+"/sbz/app.js?accid="+z,n.parentNode.insertBefore(t,n),setTimeout(y,2e3,k+1))})(0))}(window,document,"script","subiz", "acrzssijwjqsntqusgju")</script>
+      </div>
+    </footer>
+    <script>
+      !(function (s, u, b, i, z) {
+        var o, t, r, y;
+        s[i] ||
+          ((s._sbzaccid = z),
+          (s[i] = function () {
+            s[i].q.push(arguments);
+          }),
+          (s[i].q = []),
+          s[i]("setAccount", z),
+          (r = [
+            "widget.subiz.net",
+            "storage.googleapis" + (t = ".com"),
+            "app.sbz.workers.dev",
+            i +
+              "a" +
+              (o = function (k, t) {
+                var n = t <= 6 ? 5 : o(k, t - 1) + o(k, t - 3);
+                return k !== t ? n : n.toString(32);
+              })(20, 20) +
+              t,
+            i + "b" + o(30, 30) + t,
+            i + "c" + o(40, 40) + t,
+          ]),
+          (y = function (k) {
+            var t, n;
+            s._subiz_init_2094850928430 ||
+              (r[k] &&
+                ((t = u.createElement(b)),
+                (n = u.getElementsByTagName(b)[0]),
+                (t.async = 1),
+                (t.src = "https://" + r[k] + "/sbz/app.js?accid=" + z),
+                n.parentNode.insertBefore(t, n),
+                setTimeout(y, 2e3, k + 1)));
+          })(0));
+      })(window, document, "script", "subiz", "acrzssijwjqsntqusgju");
+    </script>
 
-<!-- Bootstrap CSS and JS, FontAwesome for icons -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Custom JS -->
-<script src="scripts.js"></script>
-<script>
-    // JavaScript code
-document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll(".customer-reviews .card");
+    <!-- Bootstrap CSS and JS, FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+    <script>
+      // JavaScript code
+      document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".customer-reviews .card");
 
-    cards.forEach(function(card) {
-        card.addEventListener("mouseenter", function() {
+        cards.forEach(function (card) {
+          card.addEventListener("mouseenter", function () {
             this.querySelector(".card-body").style.display = "block"; // Hiển thị nội dung thêm khi di chuột qua
             this.querySelector(".card-footer").style.display = "block"; // Hiển thị phần chân khi di chuột qua
-        });
+          });
 
-        card.addEventListener("mouseleave", function() {
+          card.addEventListener("mouseleave", function () {
             this.querySelector(".card-body").style.display = "none"; // Ẩn nội dung thêm khi di chuột ra khỏi thẻ
             this.querySelector(".card-footer").style.display = "none"; // Ẩn phần chân khi di chuột ra khỏi thẻ
+          });
         });
-    });
-});
+      });
 
-    document.querySelectorAll('.buttonnn').forEach(button => button.addEventListener('click', e => {
-    if(!button.classList.contains('loading')) {
+      document.querySelectorAll(".buttonnn").forEach((button) =>
+        button.addEventListener("click", (e) => {
+          if (!button.classList.contains("loading")) {
+            button.classList.add("loading");
 
-        button.classList.add('loading');
-
-        setTimeout(() => button.classList.remove('loading'), 3700);
-
-    }
-    e.preventDefault();
-}));
-
-</script>
-
-
-</body>
+            setTimeout(() => button.classList.remove("loading"), 3700);
+          }
+          e.preventDefault();
+        })
+      );
+    </script>
+  </body>
 </html>
-
