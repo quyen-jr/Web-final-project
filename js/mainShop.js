@@ -97,17 +97,17 @@
         minPrice = rangeSlider.data('min'),
         maxPrice = rangeSlider.data('max');
     rangeSlider.slider({
-        range: "min",
+        range: true,
         min: minPrice,
         max: maxPrice,
-        value: minPrice,
+        values: [minPrice, maxPrice],
         slide: function (event, ui) {
-            minamount.val('$' + ui.value);
+            minamount.val('$' + ui.values[0]);
+            maxamount.val('$' + ui.values[1]);
         }
     });
-    minamount.val('$' + rangeSlider.slider("value"));
-    maxamount.val('$' + maxPrice);
-
+    minamount.val('$' + rangeSlider.slider("values", 0));
+    maxamount.val('$' + rangeSlider.slider("values", 1));
 
     // var rangeSlider = $(".price-range"),
     //     rangeInput = $("#price"),
