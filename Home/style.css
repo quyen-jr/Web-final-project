@@ -3,6 +3,11 @@
     margin-right: 10px;
 }
 
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Màu nền với độ trong suốt */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Phần viền dưới navbar */
+}
+
 .form-inline {
     display: flex;
     align-items: center;
@@ -19,7 +24,31 @@
 .navbar-nav .nav-item:last-child {
      margin-right: 0; /* Loại bỏ khoảng cách cho mục cuối cùng */
 }
+
+
 /* Custom CSS for Hero Section */
+
+.carousel-caption {
+top: 40%; /* Adjusted for better vertical alignment */
+}
+
+
+.carousel-caption h1 {
+font-size: 4.5rem; /* Reduced size for better fit on smaller screens */
+font-weight: bold;
+line-height: 1.2; /* Added for better readability */
+}
+
+.carousel-caption p {
+font-size: 1.8rem; /* Slightly reduced size for balance */
+line-height: 1.5; /* Added for better readability */
+}
+
+/* Ensure buttons are visible and legible */
+.btn-primary {
+font-size: 1.2rem; /* Increased button font size */
+padding: 0.75rem 1.5rem; /* Increased padding for larger touch targets */
+}
 
 .carousel-item {
     height: 75vh;
@@ -28,32 +57,48 @@
     background-size: cover;
 }
 
-.carousel-caption {
-    bottom: 20%;
-}
 
-.carousel-caption h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
-}
 
-.carousel-caption p {
-    font-size: 1.5rem;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* About Section */
 #about {
     padding: 50px 0;
 }
 
+
 #about img {
     width: 100%;
     border-radius: 5px;
 }
 
+
+
+
+
 /* Featured Products Section */
+
 #featured-products .card {
     margin-bottom: 30px;
+}
+.card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Hiệu ứng thủy tinh */
 }
 
 #featured-products .card img {
@@ -66,7 +111,145 @@
     font-weight: bold;
 }
 
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Tránh hình ảnh bị tràn ra ngoài thẻ card */
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif; /* Thay đổi font chữ */
+    font-size: 1.25rem; /* Kích thước font chữ */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Kích thước font chữ */
+    color: #555; /* Màu chữ */
+}
+
+.btn-primary {
+    font-size: 0.9rem; /* Kích thước font chữ */
+    padding: 0.5rem 1rem; /* Kích thước nút */
+}
+
+.card-body hr {
+    margin-top: 1rem; /* Khoảng cách giữa nội dung và đường kẻ */
+    margin-bottom: 1rem; /* Khoảng cách giữa nội dung và đường kẻ */
+}
+
+
+@media (max-width: 991.98px) {
+.col-md-4 {
+flex: 0 0 50%;
+max-width: 50%;
+}
+}
+
+@media (max-width: 767.98px) {
+.col-md-4 {
+flex: 0 0 100%;
+max-width: 100%;
+}
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 575.98px) {
+.card {
+margin-left: 15px;
+margin-right: 15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Customer Reviews Section */
+/* Chú thích CSS cho hiệu ứng flip card trong phần "Customer Reviews" */
+
+/* Định dạng các thẻ card trong phần "Customer Reviews" */
+.customer-reviews .card .card-body,
+.customer-reviews .card .card-footer {
+    display: none; /* Ẩn nội dung thêm và chân của thẻ card ban đầu */
+}
+
+.customer-reviews .card {
+    position: relative; /* Đặt vị trí tương đối cho các thẻ card */
+    cursor: pointer; /* Thay đổi hình con trỏ thành dấu nhấp chuột */
+    perspective: 1000px; /* Đặt điểm nhìn cho hiệu ứng 3D */
+}
+
+/* Định dạng nội dung chính của thẻ card */
+.customer-reviews .card .card-body {
+    transition: transform 0.8s; /* Tạo hiệu ứng chuyển đổi 0.8 giây */
+    transform-style: preserve-3d; /* Bảo tồn kiểu biến đổi 3D */
+}
+
+/* Định dạng phần nội dung ở mặt sau của thẻ card */
+.customer-reviews .card .card-body.back {
+    transform: rotateY(180deg); /* Xoay 180 độ để ẩn phần sau của thẻ */
+    display: none; /* Ẩn phần sau của thẻ ban đầu */
+}
+
+/* Khi di chuột qua thẻ card, hiển thị phần nội dung ở mặt sau */
+.customer-reviews .card:hover .card-body {
+    transform: rotateY(180deg);
+}
+
+/* Khi di chuột qua thẻ card, hiển thị phần nội dung ở mặt sau */
+.customer-reviews .card:hover .card-body.back {
+    display: block; /* Hiển thị phần sau của thẻ khi di chuột qua */
+}
+
+/* Định dạng hình ảnh bên trong thẻ card */
+.customer-reviews .card img {
+    transition: transform 0.3s ease; /* Tạo hiệu ứng phóng to 0.3 giây */
+}
+
+/* Khi di chuột qua thẻ card, phóng to hình ảnh */
+.customer-reviews .card:hover img {
+    transform: scale(1.1); /* Phóng to hình ảnh lên 110% */
+}
+
+/* Định dạng phần chân của thẻ card */
+.customer-reviews .card .card-footer {
+    transition: transform 0.5s; /* Tạo hiệu ứng chuyển đổi 0.5 giây */
+    transform: translateY(50px); /* Di chuyển phần chân xuống 50px */
+}
+
+/* Khi di chuột qua thẻ card, di chuyển phần chân lên trên */
+.customer-reviews .card:hover .card-footer {
+    transform: translateY(0); /* Di chuyển phần chân lên trên */
+}
+
+
+
+.customer-card-01:hover {
+  background-color: #50A625; /* Thay đổi màu khi di chuột qua */
+  transition: background-color 0.3s ease;
+}
+
+
+
+.customer-card-02:hover {
+  background-color: #50A625; /* Thay đổi màu khi di chuột qua */
+  transition: background-color 0.3s ease;
+}
+
+
+.customer-card-03:hover {
+  background-color: #50A625; /* Thay đổi màu khi di chuột qua */
+  transition: background-color 0.3s ease;
+}
+
 #reviewsCarousel .carousel-item {
     text-align: center; /* Căn giữa nội dung bên trong .carousel-item */
     padding: 40px 20px; /* Thêm khoảng đệm (padding) 40px phía trên và dưới, 20px phía trái và phải */
@@ -107,33 +290,173 @@
     font-weight: bold;
 }
 
+
+
 /* Footer */
-/* Footer Background */
-footer {
-    background-color: #343a40; /* Màu nền */
-    color: #fff; /* Màu chữ */
-    padding: 40px 0; /* Khoảng cách giữa các phần tử bên trong */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #50A625;
+}
+.single-cta i {
+  color: #50A625; /* Màu 3 cục */
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #50A625; /* Màu chữ */
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e; /* Màu xám */
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #50A625;
+}
+.footer-widget ul li {
+  display: inline-block;
+
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #50A625;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #50A625;
+    padding: 13px 20px;
+    border: 1px solid #50A625;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #50A625c;
 }
 
-/* Navigation Links Style */
-footer ul {
-    padding: 0;
-    list-style: none; /* Loại bỏ dấu đầu dòng */
-}
+/* Kết footer
 
-footer ul li {
-    margin-bottom: 10px; /* Khoảng cách giữa các mục trong danh sách */
-}
-
-footer ul li a {
-    color: #fff; /* Màu chữ của các liên kết */
-    text-decoration: none; /* Loại bỏ gạch chân */
-    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
-}
-
-footer ul li a:hover {
-    color: #ffc107; /* Màu chữ khi di chuột qua */
-}
 
 /* Newsletter Form Style */
 footer form input[type="email"] {
@@ -159,34 +482,438 @@ footer form button[type="submit"]:hover {
 }
 
 /* Social Media Icons */
-footer .fab {
+footer .fa {
     font-size: 24px; /* Kích thước của biểu tượng */
     margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    footer {
-        text-align: center; /* Canh giữa các phần tử */
-    }
-
-    footer .text-md-start {
-        text-align: center !important; /* Canh giữa văn bản trong phần này */
-    }
-
-    footer .text-md-end {
-        text-align: center !important; /* Canh giữa văn bản trong phần này */
-        margin-top: 20px; /* Khoảng cách từ trên xuống */
-    }
-}
-
-/* Hiệu ứng thêm */
-.hero-section {
-    background-attachment: fixed;
-}
 
 /* Phóng sản phẩm khi di chuột */
 .card:hover {
     transform: scale(1.05);
     transition: transform 0.5s ease;
+}
+
+
+/* Bắt */
+    .card {
+        transition: transform 0.2s;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .rounded-circle {
+        border: 3px solid #ccc;
+    }
+/* Kết */
+
+.cach {
+height: 20px;
+}
+
+
+
+
+
+
+/* Nguoi binh luan - Giat giat */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 240px);
+  grid-gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background-color: var(--background-color);
+  box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
+  padding: 56px 16px 16px 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow .25s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    background-color: var(--card-background-color);
+  }
+
+  .icon {
+    z-index: 2;
+    position: relative;
+    display: table;
+    padding: 8px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 4.5px;
+      border-radius: 50%;
+      background-color: var(--card-icon-background-color);
+      border: 1px solid var(--card-icon-border-color);
+      backdrop-filter: blur(2px);
+      transition: background-color .25s, border-color .25s;
+    }
+
+    svg {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 24px;
+      height: 24px;
+      transform: translateZ(0);
+      color: var(--card-icon-color);
+      transition: color .25s;
+    }
+  }
+
+  h4 {
+    z-index: 2;
+    position: relative;
+    margin: 12px 0 4px 0;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--card-label-color);
+  }
+
+  p {
+    z-index: 2;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-color);
+  }
+
+  .shine {
+    border-radius: inherit;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+
+    &:before {
+      content: '';
+      width: 150%;
+      padding-bottom: 150%;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      bottom: 55%;
+      filter: blur(35px);
+      opacity: var(--card-shine-opacity);
+      transform: translateX(-50%);
+      background-image: var(--card-shine-gradient);
+    }
+  }
+
+
+  &:hover {
+    box-shadow: 0px 3px 6px var(--card-hover-box-shadow-1), 0px var(--card-hover-box-shadow-2-y) var(--card-hover-box-shadow-2-blur) var(--card-hover-box-shadow-2), 0 0 0 1px var(--card-hover-border-color);
+
+    .icon {
+      &::after {
+        background-color: var(--card-hover-icon-background-color);
+        border-color: var(--card-hover-icon-border-color);
+      }
+
+      svg {
+        color: var(--card-hover-icon-color);
+      }
+    }
+
+    .shine {
+      opacity: 1;
+      transition-duration: .5s;
+      transition-delay: 0s;
+    }
+
+    .background {
+
+      .tiles {
+        opacity: 1;
+        transition-delay: .25s;
+
+        .tile {
+          animation-name: tile;
+        }
+      }
+
+      .line {
+        opacity: 1;
+        transition-duration: .15s;
+
+        &:before {
+          transform: scaleX(1);
+        }
+
+        &:after {
+          transform: scaleY(1);
+        }
+
+        &.line-1 {
+
+          &:before,
+          &:after {
+            transition-delay: .0s;
+          }
+        }
+
+        &.line-2 {
+
+          &:before,
+          &:after {
+            transition-delay: .15s;
+          }
+        }
+
+        &.line-3 {
+
+          &:before,
+          &:after {
+            transition-delay: .3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+// Center
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: 'Inter', Arial;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    inset: 0 -60% 65% -60%;
+    background-image: radial-gradient(ellipse at top, #10B981 0%, var(--background-color) 50%);
+    opacity: var(--blur-opacity);
+  }
+
+  .twitter {
+    position: fixed;
+    display: block;
+    right: 12px;
+    bottom: 12px;
+    svg {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+    }
+  }
+}
+
+/* Nút thêm Cart */
+.buttonnn {
+    --background: #50A625; /* Màu nền cho button */
+    --text: #fff; /* Màu chữ */
+    --cart: #fff; /* Màu cho biểu tượng giỏ hàng */
+    --tick: var(--background); /* Màu cho biểu tượng đánh dấu (tick) */
+    position: relative;
+    border: none;
+    background: none;
+    padding: 8px 28px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black); /* Hiệu ứng gradient cho mask */
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    min-width: 144px;
+    color: var(--text); /* Sử dụng màu chữ đã định */
+    background: var(--background); /* Sử dụng màu nền đã định */
+    transform: scale(var(--scale, 1)); /* Hiệu ứng scale cho button */
+    transition: transform .4s cubic-bezier(.36, 1.01, .32, 1.27); /* Hiệu ứng chuyển đổi */
+    &:active {
+        --scale: .95; /* Scale khi button được click */
+    }
+    span {
+        font-size: 20px;
+        font-weight: 500;
+        display: block;
+        position: relative;
+        padding-left: 24px;
+        margin-left: -8px;
+        line-height: 26px;
+        transform: translateY(var(--span-y, 0)); /* Hiệu ứng di chuyển cho phần nội dung của button */
+        transition: transform .7s ease; /* Hiệu ứng chuyển động */
+        &:before,
+        &:after {
+            content: '';
+            width: var(--w, 2px);
+            height: var(--h, 14px);
+            border-radius: 1px;
+            position: absolute;
+            left: var(--l, 8px);
+            top: var(--t, 6px);
+            background: currentColor;
+            transform: scale(.75) rotate(var(--icon-r, 0deg)) translateY(var(--icon-y, 0)); /* Hiệu ứng biểu tượng */
+            transition: transform .65s ease .05s; /* Hiệu ứng chuyển động */
+        }
+        &:after {
+            --w: 14px;
+            --h: 2px;
+            --l: 2px;
+            --t: 12px;
+        }
+    }
+    .loading .cart {
+        visibility: visible; /* Hiển thị biểu tượng giỏ hàng khi trong trạng thái loading */
+    }
+
+
+
+
+/* Custom HR Styling */
+hr {
+border: none;
+height: 2px;
+background-color: #28a745; /* Màu xanh lá cây để phù hợp với theme */
+margin: 10px auto; /* Căn giữa và thêm khoảng cách trên dưới */
+}
+
+/* HR before 'Add to cart' button */
+.card-body > hr:last-of-type {
+height: 1px;
+background-color: #ccc; /* Màu xám nhẹ */
+width: 80%; /* Chiều rộng ngắn hơn */
+}
+
+    .cart {
+        position: absolute;
+            left: 50%;
+                 top: 50%;
+        margin: -13px 0px 0px -18px;
+        transform-origin: 12px 23px;
+        transform: translateX(-120px) rotate(-18deg); /* Vị trí và xoay biểu tượng giỏ hàng */
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+        }
+        &:before {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            box-shadow: inset 0 0 0 2px var(--cart); /* Hiệu ứng đổ bóng */
+            bottom: 0;
+            left: 9px;
+            filter: drop-shadow(11px 0 0 var(--cart)); /* Hiệu ứng đổ bóng */
+        }
+        &:after {
+            width: 16px;
+            height: 9px;
+            background: var(--cart); /* Màu nền cho biểu tượng giỏ hàng */
+            left: 9px;
+            bottom: 7px;
+            transform-origin: 50% 100%;
+            transform: perspective(4px) rotateX(-6deg) scaleY(var(--fill, 0)); /* Hiệu ứng biểu tượng giỏ hàng */
+            transition: transform 1.2s ease var(--fill-d); /* Hiệu ứng chuyển động */
+        }
+        svg {
+            z-index: 1;
+            width: 36px;
+            height: 26px;
+            display: block;
+            position: relative;
+            fill: none;
+            stroke: var(--cart); /* Màu cho đường viền của biểu tượng giỏ hàng */
+            stroke-width: 2px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            polyline {
+                &:last-child {
+                    stroke: var(--tick); /* Màu cho biểu tượng đánh dấu (tick) */
+                    stroke-dasharray: 10px;
+                    stroke-dashoffset: var(--offset, 10px); /* Hiệu ứng chuyển động của biểu tượng đánh dấu (tick) */
+                    transition: stroke-dashoffset .4s ease var(--offset-d); /* Hiệu ứng chuyển động */
+                }
+            }
+        }
+    }
+    &.loading {
+        --scale: .95; /* Scale khi đang loading */
+        --span-y: -32px; /* Di chuyển phần nội dung khi đang loading */
+        --icon-r: 180deg; /* Xoay biểu tượng khi đang loading */
+        --fill: 1; /* Hiển thị biểu tượng giỏ hàng khi đang loading */
+        --fill-d: .8s; /* Thời gian hiển thị biểu tượng giỏ hàng khi đang loading */
+        --offset: 0; /* Hiển thị biểu tượng đánh dấu (tick) khi đang loading */
+        --offset-d: 1.73s; /* Thời gian hiển thị biểu tượng đánh dấu (tick) khi đang loading */
+        .cart {
+            animation: cart 3.4s linear forwards .2s; /* Hiệu ứng chuyển động của biểu tượng giỏ hàng khi đang loading */
+        }
+    }
+}
+
+@keyframes cart {
+    12.5% {
+        transform: translateX(-60px) rotate(-18deg);
+    }
+    25%,
+    45%,
+    55%,
+    75% {
+        transform: none;
+    }
+    50% {
+        transform: scale(.9);
+    }
+    44%,
+    56% {
+        transform-origin: 12px 23px;
+    }
+    45%,
+    55% {
+        transform-origin: 50% 50%;
+    }
+    87.5% {
+        transform: translateX(70px) rotate(-18deg);
+    }
+    100% {
+        transform: translateX(140px) rotate(-18deg);
+    }
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: inherit;
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
 }
