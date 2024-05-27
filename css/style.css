@@ -1,4 +1,6 @@
-/* Custom CSS for the Navbar */
+
+
+/* Kết - Gạch */
 .navbar-brand img {
   margin-right: 10px;
 }
@@ -24,6 +26,74 @@
 .navbar-nav .nav-item:last-child {
   margin-right: 0; /* Loại bỏ khoảng cách cho mục cuối cùng */
 }
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//                                 SEARCH BOX                                 //
+////////////////////////////////////////////////////////////////////////////////
+
+
+.searchBox {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%,50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border: none; /* Loại bỏ các viền khác */
+    border-bottom: 2px solid #000; /* Thêm viền dưới màu trắng với độ dày 2px */
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+}
+/* Kết */
+
 
 /* Custom CSS for Hero Section */
 
@@ -56,15 +126,6 @@
   opacity: 11.5;
 }
 
-/* About Section */
-#about {
-  padding: 50px 0;
-}
-
-#about img {
-  width: 100%;
-  border-radius: 5px;
-}
 
 /* Featured Products Section */
 
@@ -104,6 +165,40 @@
 .btn-primary {
   font-size: 0.9rem; /* Kích thước font chữ */
   padding: 0.5rem 1rem; /* Kích thước nút */
+}
+
+/* Xoay - Vièn */
+.circle-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  float: left;
+}
+
+.circle {
+position: absolute;
+top: -10px;
+left: 2px;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+padding: 20px; /* Tăng giá trị padding để viền to hơn */
+border: 2px dashed #50a625; /* Tăng độ dày của viền và đổi thành dashed */
+animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+
+
+/* Quy tắc áp dụng hiệu ứng chuyển động khi con trỏ chuột di chuyển qua card */
+.card-body:hover .image-overlay img {
+  animation: spin 5s linear infinite;
 }
 
 .card-body hr {
@@ -182,6 +277,7 @@
 
 /* Định dạng phần chân của thẻ card */
 .customer-reviews .card .card-footer {
+
   transition: transform 0.5s; /* Tạo hiệu ứng chuyển đổi 0.5 giây */
   transform: translateY(50px); /* Di chuyển phần chân xuống 50px */
 }
@@ -191,20 +287,8 @@
   transform: translateY(0); /* Di chuyển phần chân lên trên */
 }
 
-.customer-card-01:hover {
-  background-color: #50a625; /* Thay đổi màu khi di chuột qua */
-  transition: background-color 0.3s ease;
-}
 
-.customer-card-02:hover {
-  background-color: #50a625; /* Thay đổi màu khi di chuột qua */
-  transition: background-color 0.3s ease;
-}
 
-.customer-card-03:hover {
-  background-color: #50a625; /* Thay đổi màu khi di chuột qua */
-  transition: background-color 0.3s ease;
-}
 
 #reviewsCarousel .carousel-item {
   text-align: center; /* Căn giữa nội dung bên trong .carousel-item */
@@ -399,14 +483,15 @@ ul {
   margin-left: 20px;
 }
 .footer-menu li:hover a {
-  color: #ff5e14;
+  color: #fff;
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #50A625c;
+  color: #50A625;
 }
 
 /* Kết footer
+
 
 
 /* Newsletter Form Style */
