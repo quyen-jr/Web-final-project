@@ -1,18 +1,25 @@
 .sidebar h4 {
     font-size: 23px;
     font-weight: bold;
-    margin-top: 75px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
+
+
+/*--------------------------- Departurement ---------------------------*/
+
+.sidebar__item__1 {
+    background-color: #f6f6f6;
+    border: 2px solid #c0d1c2;
+}
 .sidebar h4.department {
-    margin-top: 0;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
-
-
 .sidebar ul {
-    background-color: #ffffff;
+    background-color: #fcfcfc;
     padding: 10px;
     margin: 10px 0;
     list-style-type: none;
@@ -20,17 +27,22 @@
 
 .sidebar ul li {
     padding: 5px 0;
+    border-radius: 10px;
 }
 
 .sidebar ul li a {
     color: #585353;
     text-decoration: none;
+    margin-left: 20px;
 }
 
-.sidebar ul li a:hover {
-    color: #7abf2b;
+.sidebar ul li:hover {
+    background-color: #f3f3f3;
 }
 
+
+
+/*--------------------------- Price Range ---------------------------*/
 
 .price-range-wrap {
     background-color: #ffffff; /* Điều chỉnh màu nền */
@@ -40,7 +52,7 @@
 }
 
 .price-range-wrap .ui-slider-horizontal {
-    background-color: #e3e3e3; /* Màu nền ban đầu của thanh trượt */
+    background-color: #ffffff; /* Màu nền ban đầu của thanh trượt */
 }
 
 .price-range-wrap .ui-slider-range {
@@ -49,26 +61,37 @@
 
 .price-range-wrap .ui-slider-handle {
     background-color: #ffffff; /* Màu nền ban đầu của điểm điều chỉnh */
-    border: 2px solid #37b848; /* Viền của điểm điều chỉnh */
+    border-radius: 100%;
+    border: 2px solid #0d6a19; /* Viền của điểm điều chỉnh */
 }
 
+.price-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 
-
+}
 
 .price-input input[readonly] {
-    border: none; /* Ẩn viền */
-    background-color: transparent; /* Ẩn nền */
-    color: #333; /* Điều chỉnh màu chữ */
-    text-align: center; /* Căn giữa chữ */
-    outline: none; /* Ẩn khung đen khi bấm vào */
+    border: none;
+    background-color: transparent;
+    color: #333;
+    text-align: center;
+    outline: none;
     width: 50px;
 }
 
 
 
+/* Áp dụng cho cả item3 và item4*/
+
 input[type="checkbox"] {
-    display: none;          /* Áp dụng cho cả item3 và item4*/
+    display: none;
 }
+
+
+/*--------------------------- Color ---------------------------*/
 
 .sidebar__item__3__container {
     display: grid;
@@ -79,12 +102,342 @@ input[type="checkbox"] {
 .sidebar__item__3__container label {
     display: flex;
     justify-content: center;
+    font-size: 17px;
     padding: 10px;
-    border: 2px solid #ccc;
     border-radius: 15px;
     cursor: pointer;
 }
-  
+
+.sidebar__item__yellow {
+    border: 2px solid rgb(255, 213, 0);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.sidebar__item__yellow:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__yellow:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #ffff00;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__yellow:hover {
+    border: 2px solid #ffff00;
+}
+
+.sidebar__item__yellow:hover:before {
+    top: -35%;
+    background-color: #ffff00;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__yellow:hover:after {
+    top: -45%;
+    background-color: #ffff00;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__green {
+    border: 2px solid #12e212c1;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.sidebar__item__green:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__green:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #12e212c1;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__green:hover {
+    border: 2px solid #12e212c1;
+}
+
+.sidebar__item__green:hover:before {
+    top: -35%;
+    background-color: #12e212c1;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__green:hover:after {
+    top: -45%;
+    background-color: #12e212c1;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__orange {
+    border: 2px solid #ffa500;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.sidebar__item__orange:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__orange:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #ffa500;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__orange:hover {
+    border: 2px solid #ffa500;
+}
+
+.sidebar__item__orange:hover:before {
+    top: -35%;
+    background-color: #ffa500;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__orange:hover:after {
+    top: -45%;
+    background-color: #ffa500;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__red {
+    border: 2px solid #ff0000c5;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.sidebar__item__red:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__red:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #ff0000c5;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__red:hover {
+    border: 2px solid #ff0000c5;
+}
+
+.sidebar__item__red:hover:before {
+    top: -35%;
+    background-color: #ff0000c5;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__red:hover:after {
+    top: -45%;
+    background-color: #ff0000c5;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__blue {
+    border: 2px solid #0f74f8b6;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.sidebar__item__blue:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__blue:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #0f74f8b6;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__blue:hover {
+    border: 2px solid #0f74f8b6;
+}
+
+.sidebar__item__blue:hover:before {
+    top: -35%;
+    background-color: #0f74f8b6;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__blue:hover:after {
+    top: -45%;
+    background-color: #0f74f8b6;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__pink {
+    border: 2px solid #ffc0cb;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.sidebar__item__pink:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__pink:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #ffc0cb;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.sidebar__item__pink:hover {
+    border: 2px solid #ffc0cb;
+}
+
+.sidebar__item__pink:hover:before {
+    top: -35%;
+    background-color: #ffc0cb;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.sidebar__item__pink:hover:after {
+    top: -45%;
+    background-color: #ffc0cb;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
 input[type="checkbox"]:checked + .sidebar__item__yellow {
     border-color: rgb(255, 213, 0);
     background-color: #ffff00;
@@ -117,34 +470,79 @@ input[type="checkbox"]:checked + .sidebar__item__pink {
 
 
 
-.sidebar__item__4__container {
+/*--------------------------- Size ---------------------------*/
+
+.checkbox-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 }
   
-.sidebar__item__4 label {
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    border: 2px solid #dedede;
-    cursor: pointer;
-  }
 
-.sidebar__item__4 input[type="checkbox"]:checked + label {
-    border-color: #79cf16;
-    background-color: #7edf1720;
+.checkbox-wrapper input[type="checkbox"] {
+    display: none;
+}
+  
+.checkbox-wrapper .terms-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+  
+.checkbox-wrapper .terms-label .label-text {
+    margin-left: 10px;
+}
+  
+.checkbox-wrapper .checkbox-svg {
+    width: 30px;
+    height: 30px;
+}
+  
+.checkbox-wrapper .checkbox-box {
+    fill: #f3f2f2;
+    stroke: #79cf16;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    transition: stroke-dashoffset 0.6s ease-in;
+}
+  
+.checkbox-wrapper .checkbox-tick {
+    stroke: #79cf16;
+    stroke-dasharray: 172;
+    stroke-dashoffset: 172;
+    transition: stroke-dashoffset 0.6s ease-in;
+}
+  
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+    stroke-dashoffset: 0;
 }
 
 
 
-.sidebar__item__5 .latest-product__item {
+/*--------------------------- Latest Product ---------------------------*/
+
+.latest-product__item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
 
-.sidebar__item__5 .latest-product__item__pic {
+.latest-product__item__pic {
     flex: 0 0 60px;
     margin-right: 10px;
+}
+
+.latest-product__item,
+.latest-product__item__text {
+    color: #585353;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.latest-product__item:hover,
+.latest-product__item__text:hover {
+    color: #79cf16;
+    text-decoration: none;
 }

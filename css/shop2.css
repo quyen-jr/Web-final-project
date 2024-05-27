@@ -195,7 +195,7 @@ body {
 .product__item__pic__hover li {
 	list-style: none;
 	display: inline-block;
-	margin-right:28px; 
+	margin-right:26px; 
 }
 
 .product__item__pic__hover a {
@@ -275,9 +275,9 @@ body {
 	width: 100%;
 	background-color: #F3F6FB;
 }
-.product__item__pic__hover{
-	/* z-index: -1; */
-}
+/* .product__item__pic__hover{
+	z-index: -1;
+} */
 .product__item__text{
 	padding-top: 20px;
 	padding-bottom: 10px;

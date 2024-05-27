@@ -243,3 +243,10 @@ a.google span {
         width: 18px;
     }
 }
+body,
+input,
+textarea,
+button,
+a {
+    font-family: 'Roboto', sans-serif; /* Sử dụng font Roboto cho tất cả các phần tử */
+}
