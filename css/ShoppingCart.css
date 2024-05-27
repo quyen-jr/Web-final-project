@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.shopping-cart {
+    background-color: #ede6e6e4;
+    
+}
+
+.card-details {
+    background-color: #86fce4;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.payment-methods img {
+    width: 50px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.cart-item {
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn chỉnh các phần tử vào trung tâm theo chiều dọc */
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    border-radius: 10px; /* Bo góc cho mỗi card-item */
+    margin-bottom: 10px; /* Tạo khoảng cách giữa các card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng bóng đổ */
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-details {
+    flex-grow: 1; /* Cho phép phần này mở rộng để chiếm phần còn lại của hàng */
+}
+
+.item-controls {
+    margin-left: auto; /* Dịch chuyển các nút sang phía bên phải */
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn chỉnh các phần tử vào trung tâm theo chiều dọc */
+}
+
+.item-controls .mx-2 {
+    flex: 0 0 auto; /* Đảm bảo số lượng hàng có kích thước cố định */
+    margin-right: 5px; /* Khoảng cách giữa số lượng hàng và nút */
+}
+
+.item-controls .btn {
+    margin-right: 5px; /* Khoảng cách giữa các nút */
+}
+
+.payment-methods img {
+    width: 70px; /* Adjust the width of the card type images */
+    height: 50px; /* Adjust the height of the card type images */
+    object-fit: contain; /* Maintain the aspect ratio of the images */
+    margin-right: 30px;
+}

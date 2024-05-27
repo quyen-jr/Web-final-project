@@ -1,38 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Web Đơn Giản</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="./css/header.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/ShoppingCart.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <!-- <header class="bg-dark text-white p-4">
-    <div class="container">
-      <h1>Trang Web Đơn Giản</h1>
-      <p>Xây dựng bằng Bootstrap</p>
-    </div>
-  </header> -->
+  <Header>
 
-  <!-- Content -->
-  <section class="container mt-4">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>nội dung</h2>
-        <p>Đây là một trang web đơn giản được xây dựng bằng Bootstrap.</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+          <img src="https://i.pinimg.com/564x/3c/aa/28/3caa28fa5d82b6ecd52ebb0e7dc73000.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+          Vegetable Shops
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="Home/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">PAGES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="shop.html"><i class="fa fa-shopping-cart"></i> SHOP</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="shoppingCart.html"><i class="fa fa-shopping-cart"></i> SHOP CART</a>
+              </li>
+
+              <!-- Nút Đăng nhập/Đăng xuất -->
+              <li class="nav-item">
+                  <a class="nav-link" href="Login/index.html"> <i class="fa fa-sign-in"></i>  </a>
+              </li>
+
+
+              <li class="nav-item">
+                  <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm</button>
+                  </form>
+              </li>
+          </ul>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center p-3 mt-4">
-    <div class="container">
-      <p>&copy; 2024 Trang Web Đơn Giản</p>
+  </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="shopping-cart bg-white p-4 rounded shadow-sm ">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <a href="#" class="btn btn-link">Continue Shopping</a>
+                        <h2 class="h4">Shopping Cart</h2>
+                        <div class="sort-by">
+                            Sort by:
+                            <select class="form-control form-control-sm d-inline-block w-auto ml-2">
+                                <option value="price">Price</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-item d-flex align-items-center mb-3">
+                            <img src="imageShop2/bapcai.png" class="img-thumbnail mr-3" alt="bapcai " style="width: 80px; height: 80px;">
+                            <div class="item-details flex-grow-1">
+                                <h5 class="mb-1"> Cabbage</h5>
+                                <p class="mb-1 text-muted">1kg </p>
+                            </div>
+                            <div class="item-controls d-flex align-items-center">
+                                <button class="btn btn-outline-secondary btn-sm">-</button>
+                                <span class="mx-2">1</span>
+                                <button class="btn btn-outline-secondary btn-sm">+</button>
+                                <span class="ml-3 font-weight-bold">$99.00</span>
+                                <button class="btn btn-danger btn-sm ml-3">🗑</button>
+                            </div>
+                        </div>
+                        <div class="cart-item d-flex align-items-center mb-3">
+                            <img src="imageShop2/dua.png" class="img-thumbnail mr-3" alt="Dua " style="width: 80px; height: 80px;">
+                            <div class="item-details flex-grow-1">
+                                <h5 class="mb-1">Water melon </h5>
+                                <p class="mb-1 text-muted">3kg </p>
+                            </div>
+                            <div class="item-controls d-flex align-items-center">
+                                <button class="btn btn-outline-secondary btn-sm">-</button>
+                                <span class="mx-2">1</span>
+                                <button class="btn btn-outline-secondary btn-sm">+</button>
+                                <span class="ml-3 font-weight-bold">$99.00</span>
+                                <button class="btn btn-danger btn-sm ml-3">🗑</button>
+                            </div>
+                        </div>
+                        <div class="cart-item d-flex align-items-center mb-3">
+                            <img src="imageShop2/hambergers.png" class="img-thumbnail mr-3" alt="humberger" style="width: 80px; height: 80px;">
+                            <div class="item-details flex-grow-1">
+                                <h5 class="mb-1">Humberger </h5>
+                                <p class="mb-1 text-muted"> Big Size </p>
+                            </div>
+                            <div class="item-controls d-flex align-items-center">
+                                <button class="btn btn-outline-secondary btn-sm">-</button>
+                                <span class="mx-2">1</span>
+                                <button class="btn btn-outline-secondary btn-sm">+</button>
+                                <span class="ml-3 font-weight-bold">$10.00</span>
+                                <button class="btn btn-danger btn-sm ml-3">🗑</button>
+                            </div>
+                        </div>
+                        <div class="cart-item d-flex align-items-center mb-3">
+                          <img src="imageShop2/cachua.png" class="img-thumbnail mr-3" alt="ca chua" style="width: 80px; height: 80px;">
+                          <div class="item-details flex-grow-1">
+                              <h5 class="mb-1">Tomato </h5>
+                              <p class="mb-1 text-muted"> 4kg </p>
+                          </div>
+                          <div class="item-controls d-flex align-items-center">
+                              <button class="btn btn-outline-secondary btn-sm">-</button>
+                              <span class="mx-2">1</span>
+                              <button class="btn btn-outline-secondary btn-sm">+</button>
+                              <span class="ml-3 font-weight-bold">$10.00</span>
+                              <button class="btn btn-danger btn-sm ml-3">🗑</button>
+                          </div>
+                      </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card-details  p-4 rounded shadow-sm">
+                    <h2 class="h4">Card Details</h2>
+                    <div class="payment-methods mb-4">
+                        <img src="ImageShopcart/MasterCard.png" alt="MasterCard" class="img-fluid mr-2">
+                        <img src="ImageShopcart/visa.png" alt="Visa" class="img-fluid mr-2">
+                        <img src="ImageShopcart/AmericanExpress.png" alt="American Express" class="img-fluid mr-2">
+                        <img src="ImageShopcart/Paypal.png" alt="PayPal" class="img-fluid">
+                    </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="name-on-card">Name on Card</label>
+                            <input type="text" id="name-on-card" class="form-control" value="Steve Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" class="form-control" value="1111 2222 3333 4444">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="expiration-date">Expiration Date</label>
+                                <input type="text" id="expiration-date" class="form-control" value="10/2021">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" class="form-control" value="123">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="summary mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>Subtotal</span>
+                            <span>$8448.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span>Shipping</span>
+                            <span>$20.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between font-weight-bold">
+                            <span>Total (tax incl.)</span>
+                            <span>$8468.00</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Checkout</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    
+
+    
+
+     <!-- Footer -->
+     <footer class="bg-dark text-white text-center text-lg-start">
+      <div class="container p-4">
+          <div class="row">
+              <!-- Contact Us -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Address</h5>
+                  <p>1234 Main St, Anytown, USA</p>
+                  <p>Email: info@vegetableshop.com</p>
+                  <p>Phone: (123) 456-7890</p>
+              </div>
+              <!-- Navigation Links -->
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Navigation</h5>
+                  <ul class="list-unstyled">
+                      <li><a class="nav-link" href="index.html">Home</a></li>
+                      <li><a class="nav-link" href="#">Pages</a></li>
+                      <li><a class="nav-link" href="#">Blog</a></li>
+                      <li><a class="nav-link" href="../contact.html">Contact</a></li>
+                  </ul>
+              </div>
+              <!-- Newsletter -->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Subscribe to our Newsletter</h5>
+                  <form>
+                      <div class="form-group mb-3">
+                          <input type="email" class="form-control" placeholder="Enter your email">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Subscribe</button>
+                  </form>
+              </div>
+              <!-- Map -->
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Our Location</h5>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509593!2d-122.4194156846814!3d37.77492977975933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b3d56bb%3A0x31f7b1a15f5f3f1b!2s1234+Main+St%2C+San+Francisco%2C+CA+94109%2C+USA!5e0!3m2!1sen!2s!4v1616454004928!5m2!1sen!2s" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 text-md-start">
+                      © 2024 Vegetable Shops
+                  </div>
+                  <div class="col-md-6 text-md-end">
+                      <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
   </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
