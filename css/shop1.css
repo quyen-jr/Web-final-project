@@ -546,3 +546,6 @@ input[type="checkbox"]:checked + .sidebar__item__pink {
     color: #79cf16;
     text-decoration: none;
 }
+.latest-product__slider .owl-carousel  .touchDrag{
+    background-color: #0d6a19;
+} 
