@@ -12,6 +12,7 @@ body {
 	/* text-align: center; */
 }
 .section-title h2 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	color: #1c1c1c;
 	font-weight: 700;
 	position: relative;
@@ -87,6 +88,22 @@ body {
 	padding-top: 20px;
 	background-color: white;
 }
+@keyframes blinkText {
+	0% {
+	  color: yellow;
+	}
+	50% {
+	  color: red;
+	}
+	100% {
+	  color: rgb(242, 255, 0);
+	}
+  }
+  
+  /* Áp dụng animation vào class */
+  .product__discount__item__text {
+	
+  }
 
 .product__discount__item__text span {
 	font-size: 14px;
@@ -95,13 +112,16 @@ body {
 	margin-bottom: 4px;
 }
 
-.product__discount__item__text h5 {
-	margin-bottom: 6px;
-}
+.product__discount__item__text h5 a {
 
+	color: rebeccapurple;
+	margin-bottom: 6px;
+	animation: blinkText 0.8s infinite alternate;
+}
+/* 
 .product__discount__item__text h5 a {
 	color: #1c1c1c;
-}
+} */
 
 .product__discount__item__text .product__item__price {
 	font-size: 18px;
