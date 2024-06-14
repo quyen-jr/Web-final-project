@@ -22,7 +22,7 @@
   <!-- FontAwesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> -->
-     <!-- Bao gồm CSS -->
+  <!-- Bao gồm CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 
   <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -76,8 +76,8 @@
 
           <!-- Nút Đăng nhập/Đăng xuất -->
           <li class="nav-item">
-            <a class="nav-link" href="Login/Login.html">
-              <i class="fas fa-sign-in-alt"></i>
+            <a class="nav-link" href="login/Login.html">
+              <i class="fas fa-user"></i>
             </a>
           </li>
 
@@ -93,7 +93,7 @@
         </ul>
       </div>
     </nav>
-    <section style="background-image: url(imageContact/image.png)" class="breadcrumb-section">
+    <section style="background-image: url(imageShop2/cart-page-header-img.jpg)" class="breadcrumb-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -775,28 +775,28 @@
         });
       });
     }
-      const loveIcons = document.getElementsByClassName("heartIcon")
-      console.log(loveIcons)
-      // Lặp qua từng phần tử và gắn sự kiện click
-      for (let i = 0; i < loveIcons.length; i++) {
-        loveIcons[i].addEventListener('click', function (event) {
-          event.preventDefault();
-          Swal.fire({
-            title: "Do you want to add to favorites?",
-            // showDenyButton: true,
-            showCancelButton: true,
-            confirmButtonText: "Save",
-            // denyButtonText: `Don't save`
-          }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
-            if (result.isConfirmed) {
-              Swal.fire("Saved!", "", "success");
-            } else if (result.isDenied) {
-              Swal.fire("Changes are not saved", "", "info");
-            }
-          });
-        })
-      }
+    const loveIcons = document.getElementsByClassName("heartIcon")
+    console.log(loveIcons)
+    // Lặp qua từng phần tử và gắn sự kiện click
+    for (let i = 0; i < loveIcons.length; i++) {
+      loveIcons[i].addEventListener('click', function (event) {
+        event.preventDefault();
+        Swal.fire({
+          title: "Do you want to add to favorites?",
+          // showDenyButton: true,
+          showCancelButton: true,
+          confirmButtonText: "Save",
+          // denyButtonText: `Don't save`
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            Swal.fire("Saved!", "", "success");
+          } else if (result.isDenied) {
+            Swal.fire("Changes are not saved", "", "info");
+          }
+        });
+      })
+    }
   </script>
   <!-- Js Plugins -->
   <script src="js/message.js"></script>

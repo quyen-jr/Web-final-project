@@ -1,16 +1,19 @@
 body {
-	font-family: 'FontName', sans-serif; /* Thay 'FontName' bằng tên của font chữ bạn muốn sử dụng */
-  }
+	font-family: 'FontName', sans-serif;
+	/* Thay 'FontName' bằng tên của font chữ bạn muốn sử dụng */
+}
 
 .section-title {
 	width: 100%;
 	margin-bottom: 50px;
 }
-.title-Text{
+
+.title-Text {
 	margin-top: 30px;
 	width: 100%;
 	/* text-align: center; */
 }
+
 .section-title h2 {
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	color: #1c1c1c;
@@ -76,34 +79,37 @@ body {
 	height: 300px;
 	width: 100%;
 	background-color: rgb(237, 242, 249);
+	border-radius: 5%;
 }
 
-.product__discount__item__pic .imgSaleOff{
-	width: 100%; 
-    height: 100%; 
+.product__discount__item__pic .imgSaleOff {
+	width: 100%;
+	height: 100%;
 	object-fit: contain;
 }
+
 .product__discount__item__text {
 	text-align: center;
 	padding-top: 20px;
 	background-color: white;
 }
+
 @keyframes blinkText {
 	0% {
-	  color: yellow;
+		color: yellow;
 	}
+
 	50% {
-	  color: red;
+		color: red;
 	}
+
 	100% {
-	  color: rgb(242, 255, 0);
+		color: rgb(242, 255, 0);
 	}
-  }
-  
-  /* Áp dụng animation vào class */
-  .product__discount__item__text {
-	
-  }
+}
+
+/* Áp dụng animation vào class */
+.product__discount__item__text {}
 
 .product__discount__item__text span {
 	font-size: 14px;
@@ -118,6 +124,7 @@ body {
 	margin-bottom: 6px;
 	animation: blinkText 0.8s infinite alternate;
 }
+
 /* 
 .product__discount__item__text h5 a {
 	color: #1c1c1c;
@@ -161,11 +168,12 @@ body {
 
 .product__discount__slider.owl-carousel .owl-dots button:last-child {
 	margin-right: 0;
-} 
-
-.bi{
-	color:black;
 }
+
+.bi {
+	color: black;
+}
+
 .product__item__text {
 	text-align: center;
 	padding-top: 15px;
@@ -183,6 +191,7 @@ body {
 	color: #252525;
 	font-weight: 700;
 }
+
 .product__item__pic__hover {
 	pointer-events: auto;
 	position: absolute;
@@ -194,61 +203,66 @@ body {
 	-webkit-transition: all, 0.4s;
 	-moz-transition: all, 0.4s;
 	-ms-transition: all, 0.4s;
-	-o-transition: all,0.4s;
+	-o-transition: all, 0.4s;
 	transition: all, 0.4s;
 	z-index: 1;
 }
-.product__discount__item__text{
+
+.product__discount__item__text {
 	position: relative;
 	z-index: 3;
 }
+
 .product__discount__item:hover .product__item__pic__hover {
 	bottom: 110px;
 
 }
+
 .product__item__pic__hover li:hover a {
-    transform: rotate(360deg);
-    transition: transform 0.3s ease; /* Thêm transition để tạo hiệu ứng xoay mềm mại */
+	transform: rotate(360deg);
+	transition: transform 0.3s ease;
+	/* Thêm transition để tạo hiệu ứng xoay mềm mại */
 }
+
 .product__item__pic__hover .bi {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .product__item__pic__hover li {
 	list-style: none;
 	display: inline-block;
-	margin-right:26px; 
+	margin-right: 26px;
 }
 
 .product__item__pic__hover a {
-    display: inline-block;
-    position: relative;
+	display: inline-block;
+	position: relative;
 }
 
-.product__item__pic__hover   a:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 10px;
-    height: 10px;
+.product__item__pic__hover a:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 10px;
+	height: 10px;
 	width: 45px;
-    height: 45px;
-    background-color:white;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    transition: all 0.3s ease;
+	height: 45px;
+	background-color: white;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+	transition: all 0.3s ease;
 	transition: width 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
 	z-index: -1;
 }
 
 .product__item__pic__hover li:hover a:before {
-    width: 40px;
-    height: 40px;
-	background-color:rgb(96, 240, 108);
-    opacity: 1;
-	transition:background-color 1s ease;
+	width: 40px;
+	height: 40px;
+	background-color: rgb(96, 240, 108);
+	opacity: 1;
+	transition: background-color 1s ease;
 }
 
 
@@ -291,88 +305,116 @@ body {
 
 
 */
-.product__item__pic{
+/* .product__item{
+	border: 1px solid orange;
+} */
+.product__item__pic {
 	padding: 20px;
 	height: 300px;
 	width: 100%;
 	background-color: #F3F6FB;
+	overflow: hidden;
+	border-radius: 5%;
+	/* border: 1px solid orange; */
 }
+
 /* .product__item__pic__hover{
 	z-index: -1;
 } */
-.product__item__text{
+.product__item__text {
 	padding-top: 20px;
 	padding-bottom: 10px;
 	margin-bottom: 20px;
-	background-color:white;
+	background-color: white;
 	position: relative;
 	z-index: 3;
 }
+
 .product__item:hover .product__item__pic__hover {
 	bottom: 120px;
 	z-index: 1;
 }
-.imgProduct{
-	width: 100%; 
-    height: 100%; 
+
+.imgProduct {
+	width: 100%;
+	height: 100%;
 	object-fit: contain;
+	transition: transform 0.5s ease;
+	overflow: hidden;
 }
+
+.product__item__pic:hover .imgProduct {
+	transform: scale(1.3);
+	/* Scale the image up when hovering */
+}
+
 /* filter */
-.filter__found{
+.filter__found {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 /* sale off percentage */
-.sale-Off-Percentage-Img{
+.sale-Off-Percentage-Img {
 	position: absolute;
 	/* / */
-	width:20%!important;
-	top:  5%;
+	width: 20% !important;
+	top: 5%;
 	/* transform: translate(-30%, -90%); */
 	animation: blink 0.2s infinite alternate;
 }
+
 @keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0.9; }
-    100% { opacity: 0.5; }
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 0.5;
+	}
 }
 
 
 
 .breadcrumb-section {
-    display: flex;
-    align-items: center;
-    padding: 45px 0 40px;
+	display: flex;
+	align-items: center;
+	padding: 45px 0 40px;
 }
 
 .breadcrumb__text h2 {
-    font-size: 46px;
-    color: #ffffff;
-    font-weight: 700;
+	font-size: 46px;
+	color: #ffffff;
+	font-weight: 700;
 }
 
 .breadcrumb__option a {
-    display: inline-block;
-    font-size: 16px;
-    color: #ffffff;
-    font-weight: 700;
-    margin-right: 20px;
-    position: relative;
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 700;
+	margin-right: 20px;
+	position: relative;
 }
+
 /* adda */
 .breadcrumb__option a:after {
-    position: absolute;
-    right: -12px;
-    top: 13px;
-    height: 1px;
-    width: 10px;
-    background: #ffffff;
-    content: "";
+	position: absolute;
+	right: -12px;
+	top: 13px;
+	height: 1px;
+	width: 10px;
+	background: #ffffff;
+	content: "";
 }
 
 .breadcrumb__option span {
-    display: inline-block;
-    font-size: 16px;
-    color: #ffffff;
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
 }
