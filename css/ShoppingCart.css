@@ -188,18 +188,22 @@ ul {
 }
 .card_body {
   margin-top: 10px;
-  text-align: left;
+  text-align: center;
 }
 .card_title {
   font-size: 16px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 .card_price {
   color: var(--colo-primary);
   margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
 }
 .card_ratings {
   display: flex;
+  justify-content: center;
 }
 .card_stars {
   margin-right: 10px;
@@ -258,6 +262,7 @@ ul {
   outline: none;
   margin-top: 20px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 
