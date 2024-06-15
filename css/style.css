@@ -298,7 +298,7 @@
 }
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.05)), url('/homeimg/ban2.jpg');
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.05)), url('../homeimg/ban2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
