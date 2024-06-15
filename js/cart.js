@@ -93,16 +93,63 @@ hamburger.addEventListener("click", () => {
 
 const AddToCart = document.querySelectorAll(".add_to_cart");
 
-AddToCart.forEach((button) => {
-  button.addEventListener("click", () => {
-    const id = button.getAttribute("data-id");
-    const title = button.getAttribute("data-title");
-    const image = button.getAttribute("data-image");
-    const price = button.getAttribute("data-price");
+// AddToCart.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     const id = button.getAttribute("data-id");
+//     const title = button.getAttribute("data-title");
+//     const image = button.getAttribute("data-image");
+//     const price = button.getAttribute("data-price");
 
-    const cartItem = { id, title, image, price };
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(cartItem);
-    localStorage.setItem("cart", JSON.stringify(cart));
+//     const cartItem = { id, title, image, price };
+//     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+//     cart.push(cartItem);
+//     localStorage.setItem("cart", JSON.stringify(cart));
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const cartItems = document.querySelectorAll('.cart-item');
+  const subtotalElem = document.getElementById('subtotal');
+  const totalElem = document.getElementById('total');
+  const shippingCost = 20.00;
+
+  function updateCartTotal() {
+      let subtotal = 0;
+      cartItems.forEach(item => {
+          const quantity = parseInt(item.querySelector('.quantity').textContent);
+          const price = parseFloat(item.dataset.price);
+          subtotal += quantity * price;
+      });
+      subtotalElem.textContent = `$${subtotal.toFixed(2)}`;
+      totalElem.textContent = `$${(subtotal + shippingCost).toFixed(2)}`;
+  }
+
+  cartItems.forEach(item => {
+      const decreaseBtn = item.querySelector('.decrease-quantity');
+      const increaseBtn = item.querySelector('.increase-quantity');
+      const quantityElem = item.querySelector('.quantity');
+      const itemTotalPriceElem = item.querySelector('.item-total-price');
+
+      decreaseBtn.addEventListener('click', () => {
+          let quantity = parseInt(quantityElem.textContent);
+          if (quantity > 1) {
+              quantity--;
+              quantityElem.textContent = quantity;
+              const price = parseFloat(item.dataset.price);
+              itemTotalPriceElem.textContent = `$${(price * quantity).toFixed(2)}`;
+              updateCartTotal();
+          }
+      });
+
+      increaseBtn.addEventListener('click', () => {
+          let quantity = parseInt(quantityElem.textContent);
+          quantity++;
+          quantityElem.textContent = quantity;
+          const price = parseFloat(item.dataset.price);
+          itemTotalPriceElem.textContent = `$${(price * quantity).toFixed(2)}`;
+          updateCartTotal();
+      });
   });
+
+  updateCartTotal();
 });
