@@ -1,5 +1,142 @@
+/* Mới thêm */
+/* Target the icons inside features-icon */
+.features-icon i {
+    /* Specify the size of the icon */
+    font-size: 3rem;
+}
+.features-icon {
+    /* Đảm bảo hình ảnh là hình tròn */
+    width: 100px;
+}
 
 
+
+/* Adjust the color of the icons */
+
+
+/* Make the icons circular */
+.features-icon {
+    /* Ensure the icon container is a circle */
+    border-radius: 50%;
+}
+
+/* Adjust the padding around the icons */
+.features-icon {
+    /* Ensure the icon container has a padding of 1rem */
+    padding: 1rem;
+}
+.features-icon {
+    /* Đảm bảo hình ảnh không bị biến dạng khi chuyển thành hình elip */
+    overflow: hidden;
+    /* Thiết lập tỷ lệ khung hình cho hình elip (16:9 là ví dụ) */
+    aspect-ratio: 1/1; /* Aspect ratio 1:1 sẽ tạo thành hình ellipse */
+    /* Đảm bảo hình ảnh là một hình tròn */
+    border-radius: 50%;
+}
+
+.features-icon i {
+    /* Đảm bảo biểu tượng ở giữa */
+    display: block;
+    margin: auto;
+    /* Kích thước của biểu tượng */
+    font-size: 3rem;
+}
+
+/* Chuyển động */
+.features-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.features-item:hover .features-icon {
+    transform: scale(1.1); /* Phóng to biểu tượng khi di chuột qua */
+}
+
+.features-item:hover .features-content {
+    transform: translateY(-20px); /* Dịch chuyển nội dung lên khi di chuột qua */
+}
+
+.features-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.features-item:hover .features-icon {
+    transform: scale(1.2); /* Phóng to biểu tượng khi di chuột qua */
+}
+
+.features-icon i {
+    transition: color 0.3s ease-in-out;
+}
+
+
+.features-item {
+    position: relative;
+}
+
+
+.features-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.features-item:hover .features-icon {
+    transform: rotate(360deg) scale(1.1); /* Xoay và phóng to biểu tượng khi di chuột qua */
+}
+
+        .features {
+            margin-top: 0px; /* Thiết lập lề trên là 50px */
+        }
+
+
+
+
+
+
+ .btn-buy-now {
+     pointer-events: auto !important;
+     display: inline-block !important;
+     visibility: visible !important;
+ }
+
+       /* CSS cho hiệu ứng thủy tinh (glassmorphism) */
+        .swal2-popup {
+            border: 1px solid rgba(255, 255, 255, 0.18); /* Viền trong suốt */
+            border-radius: 15px; /* Bo tròn góc */
+            background: rgba(255, 255, 255, 0.65); /* Nền trong suốt */
+            backdrop-filter: blur(10px); /* Hiệu ứng làm mờ */
+            -webkit-backdrop-filter: blur(10px); /* Hiệu ứng làm mờ cho Safari */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Đổ bóng */
+            font-family: 'Roboto', sans-serif; /* Font chữ hiện đại */
+            color: #50a625; /* Màu chữ trung tính */
+        }
+
+        .swal2-title {
+            color: #50a625; /* Màu tiêu đề nhẹ nhàng */
+            text-shadow: none; /* Bỏ đổ bóng tiêu đề */
+        }
+
+        .swal2-content {
+            color: black; /* Màu nội dung là đen */
+        }
+
+.swal2-confirm {
+    background-color: #50a625 !important; /* Màu nền của nút "OK" */
+    color: white !important; /* Màu chữ của nút "OK" */
+    border: none; /* Loại bỏ viền */
+    border-radius: 5px; /* Bo tròn góc */
+    padding: 10px 20px; /* Độ dày và khoảng cách bên trong */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+.swal2-confirm:hover {
+    background-color: #61AE3A !important; /* Màu nền khi di chuột vào */
+    color: white !important; /* Màu chữ khi di chuột vào */
+}
+
+
+    .swal2-icon.custom-icon {
+
+        color: #50a625; /* Màu của biểu tượng */
+    }
 /* Kết - Gạch */
 .navbar-brand img {
   margin-right: 10px;
@@ -82,42 +219,198 @@
 /* Kết */
 
 
-/* Custom CSS for Hero Section */
 
-.carousel-caption {
-  top: 40%; /* Adjusted for better vertical alignment */
+
+
+/* Style cho các nút lọc */
+#filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
 
-.carousel-caption h1 {
-  font-size: 4.5rem; /* Reduced size for better fit on smaller screens */
+.filter-button {
+  margin: 10px 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #50a625;
+  color: #50a625;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.2; /* Added for better readability */
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.carousel-caption p {
-  font-size: 1.8rem; /* Slightly reduced size for balance */
-  line-height: 1.5; /* Added for better readability */
+.filter-button.active,
+.filter-button:hover {
+  background-color: #50a625;
+  color: #fff;
 }
 
-/* Ensure buttons are visible and legible */
-.btn-primary {
-  font-size: 1.2rem; /* Increased button font size */
-  padding: 0.75rem 1.5rem; /* Increased padding for larger touch targets */
+/* Chuyển động cho các nút lọc */
+.filter-button.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 2px;
+  animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1.2);
+  }
+}
+
+/* Style cho nút điều hướng */
+.text-center.mt-4 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  background-color: #50a625;
+  border-color: #50a625;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #3f8720;
+  border-color: #3f8720;
+}
+
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: #347018;
+  border-color: #347018;
+}
+/*** Hero Header ***/
+.hero-header {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.05)), url('/homeimg/ban2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+text-align: left !important;
+    color: #50a625;
+    margin-top: 0px;
+    overflow: hidden; /* Đảm bảo không có phần tử nào tràn ra ngoài */
+}
+
+.hero-title {
+    font-size: 48px; /* Kích thước chữ lớn */
+    font-weight: bold; /* Độ đậm của chữ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng chữ */
+    color: #50a625;
+    margin-bottom: 20px;
+}
+
+.hero-header p {
+    font-size: 24px; /* Kích thước chữ cho đoạn văn */
+    font-weight: normal; /* Độ đậm của chữ */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Đổ bóng chữ */
+    margin-top: 10px;
 }
 
 .carousel-item {
-  height: 75vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  opacity: 11.5;
+    position: relative;
 }
+
+.carousel-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    background: rgba(255, 181, 36, 0.7);
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--bs-white);
+    background: var(--bs-primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/homeimg/ban2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*** Hero Header end ***/
+
+
+
 
 
 /* Featured Products Section */
 
+#product-cards .col-md-4 {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Đảm bảo các card có chiều cao bằng nhau */
+  margin-top: 20x;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Đảm bảo các card có chiều cao bằng nhau */
+}
+
+.card-body {
+  flex: 1; /* Cho phép nội dung linh hoạt mở rộng để lấp đầy chiều cao của card */
+}
+
+.card-img-top {
+  max-height: 100%; /* Đảm bảo hình ảnh không vượt quá chiều cao của card */
+}
+
+
+
+
+/* Điều chỉnh khoảng cách giữa phần sản phẩm và nút điều hướng */
+.features {
+    margin-bottom: 0; /* Loại bỏ margin-bottom của phần features */
+}
+
+#product-cards {
+    margin-bottom: 0px; /* Khoảng cách dưới của phần sản phẩm */
+}
+
+.text-center.mt-4 {
+    margin-top: 0px; /* Khoảng cách từ top xuống của nút điều hướng */
+}
+
+
+
+
 #featured-products .card {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .card:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Hiệu ứng thủy tinh */

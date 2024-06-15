@@ -10,23 +10,12 @@
 
     <title>Responsive Login and Signup Form</title>
     <!-- Bootstrap CSS -->
-    <!-- <link
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            rel="stylesheet"
-    /> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- CSS lOGIN-->
     <link rel="stylesheet" href="Login.css">
-
-    <!-- Boxicons CSS -->
-    <link
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            rel="stylesheet"
-    />
     <!-- FontAwesome CSS -->
-    <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Search -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -37,329 +26,320 @@
 </head>
 
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img
-                src="https://i.pinimg.com/564x/3c/aa/28/3caa28fa5d82b6ecd52ebb0e7dc73000.jpg"
-                alt="Logo"
-                width="30"
-                height="30"
-                class="d-inline-block align-top"
-        />
-        Organic Shops
-    </a>
-    <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-    >
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="../home.html">HOME</a>
-            </li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/564x/3c/aa/28/3caa28fa5d82b6ecd52ebb0e7dc73000.jpg" alt="Logo" width="30"
+                height="30" class="d-inline-block align-top" />
+            Organic Shops
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../home.html">HOME</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="../contact.html">CONTACT</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">CONTACT</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="../shop.html"
-                ><i class="fas fa-shopping-cart"></i> SHOP</a
-                >
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../shop.html"><i class="fas fa-shopping-cart"></i> SHOP</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="../shoppingCart.html"
-                ><i class="fas fa-shopping-cart"></i> SHOP CART</a
-                >
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../shoppingCart.html"><i class="fas fa-shopping-cart"></i> SHOP CART</a>
+                </li>
 
-            <!-- Nút Đăng nhập/Đăng xuất -->
-            <li class="nav-item">
-                <a class="nav-link" href="Login.html">
-                    <i class="fas fa-user"></i>
-                </a>
-            </li>
+                <!-- Nút Đăng nhập/Đăng xuất -->
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </li>
 
 
-            <li class="nav-item">
-                <div class="searchBox custom-search-box">
-                    <input class="searchInput" type="text" name="" placeholder="Search">
-                    <button class="searchButton" href="#" style="margin-left: 10px;">
-                        <i class="material-icons">search</i>
-                    </button>
-                </div>
+                <li class="nav-item">
+                    <div class="searchBox custom-search-box">
+                        <input class="searchInput" type="text" name="" placeholder="Search">
+                        <button class="searchButton" href="#" style="margin-left: 10px;">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
 
-            </li>
-        </ul>
-    </div>
-</nav>
-<section class="container forms container-form">
-    <div class="form login">
-        <div class="form-content">
-            <header>Login</header>
-            <form class="formRegister" action="#">
-                <div class="field input-field">
-                    <input type="email" placeholder="Email" class="input" required>
-                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container forms container-form">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form class="formRegister" action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" required>
+                    </div>
 
-                <div class="field input-field">
-                    <input type="password" placeholder="Password" class="password" required>
-                    <i class='bx bx-hide eye-icon'></i>
-                </div>
+                    <div class="field input-field">
+                        <input type="password" placeholder="Password" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
 
                 <div class="form-link">
-                    <a href="#" class="forgot-pass">Forgot password?</a>
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
                 </div>
-
-                <div class="field button-field">
-                    <button>Login</button>
-                </div>
-            </form>
-
-            <div class="form-link">
-                <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
             </div>
-        </div>
 
-        <div class="line"></div>
+            <div class="line"></div>
 
-        <div class="media-options">
-            <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email" class="field facebook" class="field facebook">
-                <i class='bx bxl-facebook facebook-icon'></i>
-                <span>Login with Facebook</span>
-            </a>
-        </div>
+            <div class="media-options">
+                <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email"
+                    class="field facebook" class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
 
-        <div class="media-options">
-            <a href="https://accounts.google.com/o/oauth2/v2/auth?
+            <div class="media-options">
+                <a href="https://accounts.google.com/o/oauth2/v2/auth?
    scope=email%20profile&
    response_type=code&
    redirect_uri=YOUR_REDIRECT_URI&
    client_id=YOUR_CLIENT_ID" class="field google">
-                <img src="images/google.png" alt="" class="google-img">
-                <span>Login with Google</span>
-            </a>
-        </div>
-
-    </div>
-
-    <!-- Signup Form -->
-
-    <div class="form signup">
-        <div class="form-content">
-            <header>Signup</header>
-            <form action="#">
-                <div class="field input-field">
-                    <input type="email" placeholder="Email" class="input" required>
-                </div>
-
-                <div class="field input-field">
-                    <input type="password" placeholder="Create password" class="password" required>
-                </div>
-
-                <div class="field input-field">
-                    <input type="password" placeholder="Confirm password" class="password" required>
-                    <i class='bx bx-hide eye-icon'></i>
-                </div>
-
-                <div class="field button-field">
-                    <button>Signup</button>
-                </div>
-            </form>
-
-            <div class="form-link">
-                <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
             </div>
+
         </div>
 
-        <div class="line"></div>
+        <!-- Signup Form -->
 
-        <div class="media-options">
-            <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email" class="field facebook">
-                <i class='bx bxl-facebook facebook-icon'></i>
-                <span>Login with Facebook</span>
-            </a>
-        </div>
+        <div class="form signup ">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#">
+                    <div class="field input-field">
+                        <input type="email" placeholder="Email" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Create password" class="password" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" placeholder="Confirm password" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="media-options">
+                <a href="https://www.facebook.com/v12.0/dialog/oauth?client_id=YOUR_APP_ID&redirect_uri=YOUR_REDIRECT_URI&scope=email"
+                    class="field facebook">
+                    <i class='bx bxl-facebook facebook-icon'></i>
+                    <span>Login with Facebook</span>
+                </a>
+            </div>
 
 
 
-        <div class="media-options">
-            <a href="https://accounts.google.com/o/oauth2/v2/auth?
+            <div class="media-options">
+                <a href="https://accounts.google.com/o/oauth2/v2/auth?
    scope=email%20profile&
    response_type=code&
    redirect_uri=YOUR_REDIRECT_URI&
-   client_id=YOUR_CLIENT_ID"class="field google">
-                <img src="images/google.png" alt="" class="google-img">
-                <span>Login with Google</span>
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<footer class="footer-section">
-    <div class="container">
-        <div class="footer-cta pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="cta-text">
-                            <h4>Find us</h4>
-                            <span>1010 Avenue, sw 54321, chandigarh</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <i class="fas fa-phone"></i>
-                        <div class="cta-text">
-                            <h4>Call us</h4>
-                            <span>9876543210 0</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-4 mb-30">
-                    <div class="single-cta">
-                        <i class="far fa-envelope-open"></i>
-                        <div class="cta-text">
-                            <h4>Mail us</h4>
-                            <span>mail@info.com</span>
-                        </div>
-                    </div>
-                </div>
+   client_id=YOUR_CLIENT_ID" class="field google">
+                    <img src="images/google.png" alt="" class="google-img">
+                    <span>Login with Google</span>
+                </a>
             </div>
-        </div>
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <h3 style="color: #50a625">Organic Shop</h3>
 
-                        <div class="footer-text">
-                            <p>
-                                At Organic Shop, we offer the freshest and highest quality vegetables. From crisp greens to ripe tomatoes, our produce is both delicious and nutritious. Experience the best in fresh produce with us.
-                            </p>
-                        </div>
-                        <div class="footer-social-icon">
-                            <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <br />
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="shoppingCart.html">Shop Cart</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
-                        </div>
-                        <br />
-                        <div class="footer-text mb-25">
-                            <p>
-                                Don’t miss to subscribe to our new feeds, kindly fill the
-                                form below.
-                            </p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address" />
-                                <button><i class="fab fa-telegram-plane"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="copyright-area">
+    </section>
+
+    <footer class="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2024</p>
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="#">Blogs</a></li>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="shoppingCart.html"> Shop Cart</a></li>
-                        </ul>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <h3 style="color: #50a625">Organic Shop</h3>
+
+                            <div class="footer-text">
+                                <p>
+                                    At Organic Shop, we offer the freshest and highest quality vegetables. From crisp
+                                    greens to ripe tomatoes, our produce is both delicious and nutritious. Experience
+                                    the best in fresh produce with us.
+                                </p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <br />
+                            <ul>
+                                <li><a href="../home.html">Home</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
+                                <li><a href="../shop.html">Shop</a></li>
+                                <li><a href="../shoppingCart.html">Shop Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <br />
+                            <div class="footer-text mb-25">
+                                <p>
+                                    Don’t miss to subscribe to our new feeds, kindly fill the
+                                    form below.
+                                </p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address" />
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<script>
-    !(function (s, u, b, i, z) {
-        var o, t, r, y;
-        s[i] ||
-        ((s._sbzaccid = z),
-            (s[i] = function () {
-                s[i].q.push(arguments);
-            }),
-            (s[i].q = []),
-            s[i]("setAccount", z),
-            (r = [
-                "widget.subiz.net",
-                "storage.googleapis" + (t = ".com"),
-                "app.sbz.workers.dev",
-                i +
-                "a" +
-                (o = function (k, t) {
-                    var n = t <= 6 ? 5 : o(k, t - 1) + o(k, t - 3);
-                    return k !== t ? n : n.toString(32);
-                })(20, 20) +
-                t,
-                i + "b" + o(30, 30) + t,
-                i + "c" + o(40, 40) + t,
-            ]),
-            (y = function (k) {
-                var t, n;
-                s._subiz_init_2094850928430 ||
-                (r[k] &&
-                    ((t = u.createElement(b)),
-                        (n = u.getElementsByTagName(b)[0]),
-                        (t.async = 1),
-                        (t.src = "https://" + r[k] + "/sbz/app.js?accid=" + z),
-                        n.parentNode.insertBefore(t, n),
-                        setTimeout(y, 2e3, k + 1)));
-            })(0));
-    })(window, document, "script", "subiz", "acrzssijwjqsntqusgju");
-</script>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="../home.html">Home</a></li>
+                                <li><a href="../shop.html">Shop</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
+                                <li><a href="../shoppingCart.html"> Shop Cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        !(function (s, u, b, i, z) {
+            var o, t, r, y;
+            s[i] ||
+                ((s._sbzaccid = z),
+                    (s[i] = function () {
+                        s[i].q.push(arguments);
+                    }),
+                    (s[i].q = []),
+                    s[i]("setAccount", z),
+                    (r = [
+                        "widget.subiz.net",
+                        "storage.googleapis" + (t = ".com"),
+                        "app.sbz.workers.dev",
+                        i +
+                        "a" +
+                        (o = function (k, t) {
+                            var n = t <= 6 ? 5 : o(k, t - 1) + o(k, t - 3);
+                            return k !== t ? n : n.toString(32);
+                        })(20, 20) +
+                        t,
+                        i + "b" + o(30, 30) + t,
+                        i + "c" + o(40, 40) + t,
+                    ]),
+                    (y = function (k) {
+                        var t, n;
+                        s._subiz_init_2094850928430 ||
+                            (r[k] &&
+                                ((t = u.createElement(b)),
+                                    (n = u.getElementsByTagName(b)[0]),
+                                    (t.async = 1),
+                                    (t.src = "https://" + r[k] + "/sbz/app.js?accid=" + z),
+                                    n.parentNode.insertBefore(t, n),
+                                    setTimeout(y, 2e3, k + 1)));
+                    })(0));
+        })(window, document, "script", "subiz", "acrzssijwjqsntqusgju");
+    </script>
 
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
+    <scrip src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
