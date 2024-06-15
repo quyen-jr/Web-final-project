@@ -18,7 +18,7 @@
     backdrop-filter: blur(10px);
 }
 
-.login {
+.form {
     position: absolute;
     top: 50%;
     left: 50%;
