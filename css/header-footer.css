@@ -9,15 +9,6 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Phần viền dưới navbar */
 }
 
-.form-inline {
-    display: flex;
-    align-items: center;
-}
-
-.form-control {
-    width: 200px;
-}
-
 .navbar-nav .nav-item {
     margin-right: 25px; /* Khoảng cách giữa các mục */
 }
@@ -201,11 +192,11 @@
 
 .footer-widget ul li {
     display: inline-block;
-
-    float: left;
     width: 50%;
     margin-bottom: 12px;
+    box-sizing: border-box; /* Optional, to include padding/border in width */
 }
+
 
 .footer-widget ul li a:hover {
     color: #50a625;
