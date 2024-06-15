@@ -8,7 +8,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.container-form {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -18,7 +18,7 @@
     backdrop-filter: blur(10px);
 }
 
-.form {
+.login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,11 +26,11 @@
     max-width: 430px;
     width: 100%;
     padding: 30px;
-    border-radius: 10px; /* Slightly rounded corners */
+    border-radius: 10px; 
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
-    backdrop-filter: blur(10px); /* Glass effect */
-    border: 2px solid #28a745; /* Green border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); 
+    border: 2px solid #28a745; 
 }
 
 .form.signup {
@@ -42,20 +42,18 @@
     opacity: 1;
     pointer-events: auto;
 }
-
 .forms.show-signup .form.login {
     opacity: 0;
     pointer-events: none;
 }
 
 header {
-    font-size: 32px; /* Larger font size for header */
+    font-size: 32px;
     font-weight: 600;
     color: #232836;
     text-align: center;
 }
-
-form {
+.formRegister {
     margin-top: 30px;
 }
 
@@ -84,7 +82,7 @@ form {
 }
 
 .field input:focus {
-    border-color: #28a745; /* Green border on focus */
+    border-color: #28a745; 
     border-width: 2px;
 }
 
@@ -97,17 +95,17 @@ form {
     color: #8b8b8b;
     cursor: pointer;
     padding: 5px;
-}
+} 
 
 .field button {
     color: #fff;
-    background-color: #28a745; /* Green button color */
+    background-color: #28a745; 
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .field button:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #218838; 
 }
 
 .form-link {
@@ -158,19 +156,19 @@ form {
 
 a.facebook {
     color: #fff;
-    background-color: #28a745; /* Green background color */
+    background-color: #28a745; 
 }
 
 a.facebook .facebook-icon {
     height: 28px;
     width: 28px;
-    color: #fff; /* White icon color */
+    color: #fff; 
     font-size: 20px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #28a745; /* Green background color */
+    background-color: #28a745; 
 }
 
 .facebook-icon,
@@ -199,11 +197,11 @@ a.google span {
 
 @media screen and (max-width: 400px) {
     .form {
-        padding: 20px 15px; /* Increased padding for better spacing */
+        padding: 20px 15px; 
     }
 
     header {
-        font-size: 26px; /* Adjusted font size */
+        font-size: 26px; 
     }
 
     .form .field {
