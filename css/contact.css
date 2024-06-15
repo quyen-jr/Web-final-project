@@ -168,21 +168,10 @@ ol {
 .map .map-inside {
     position: absolute;
     left: 50%;
-    top: 160px;
+    top: 60px;
     -webkit-transform: translateX(-175px);
     -ms-transform: translateX(-175px);
     transform: translateX(-175px);
-}
-
-.map .map-inside i {
-    font-size: 48px;
-    color: #7fad39;
-    position: absolute;
-    bottom: -75px;
-    left: 50%;
-    -webkit-transform: translateX(-18px);
-    -ms-transform: translateX(-18px);
-    transform: translateX(-18px);
 }
 
 .map .map-inside .inside-widget {
@@ -194,19 +183,6 @@ ol {
     z-index: 1;
     -webkit-box-shadow: 0 0 20px 5px rgba(12, 7, 26, 0.15);
     box-shadow: 0 0 20px 5px rgba(12, 7, 26, 0.15);
-}
-
-.map .map-inside .inside-widget:after {
-    position: absolute;
-    left: 50%;
-    bottom: -30px;
-    -webkit-transform: translateX(-6px);
-    -ms-transform: translateX(-6px);
-    transform: translateX(-6px);
-    border: 12px solid transparent;
-    border-top: 30px solid #ffffff;
-    content: "";
-    z-index: -1;
 }
 
 .map .map-inside .inside-widget h4 {
